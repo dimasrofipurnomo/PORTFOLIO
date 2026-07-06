@@ -1,26 +1,94 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f7f4;
+  --foreground: #000000;
+  
+  /* Neo Brutalist Theme Colors */
+  --neo-yellow: #ffd84d;
+  --neo-blue: #3b82f6;
+  --neo-pink: #ff6fae;
+  --neo-bg: #f8f7f4;
+  --neo-black: #000000;
+  
+  --primary: var(--neo-yellow);
+  --primary-foreground: #000000;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --border: #000000;
 }
 
-@theme inline {
+.dark {
+  --background: #0d0d11;
+  --foreground: #f8f7f4;
+  
+  /* Neo Brutalist Dark Theme Colors */
+  --neo-bg: #0d0d11;
+  --neo-black: #ffffff;
+  
+  --primary: var(--neo-yellow);
+  --primary-foreground: #000000;
+  --card: #18181c;
+  --card-foreground: #f8f7f4;
+  --border: #ffffff;
+}
+
+@theme {
+  --color-neo-yellow: var(--neo-yellow);
+  --color-neo-blue: var(--neo-blue);
+  --color-neo-pink: var(--neo-pink);
+  --color-neo-bg: var(--neo-bg);
+  --color-neo-black: var(--neo-black);
+  
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  
+  /* Typography */
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Custom Neo Brutalism utilities */
+.neo-border {
+  border: 4px solid var(--neo-black);
+}
+
+.neo-shadow {
+  box-shadow: 8px 8px 0px var(--neo-black);
+}
+
+.neo-shadow-sm {
+  box-shadow: 4px 4px 0px var(--neo-black);
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+

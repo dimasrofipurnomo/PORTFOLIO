@@ -1,0 +1,495 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "organization": "Organization",
+    "about": "About",
+    "contact": "Contact Me"
+  },
+  "Footer": {
+    "copyright": "© 2026 All Rights Reserved. Built with digital craftsmanship using Flutter, Laravel, and Go."
+  },
+  "Home": {
+    "hero": {
+      "title": "Welcome to My",
+      "portfolio": "Portfolio",
+      "subtitle": "This portfolio showcases the projects, ideas, and experiences that shaped my journey as a system analyst, ui/ux design, and software developer. From requirements analysis and UML modeling to backend systems, cloud technologies, and user-centered products, every project here represents continuous learning, collaboration, and meaningful problem solving.",
+      "explore": "Explore Projects",
+      "cv": "Download CV",
+      "connect": "Let's Connect"
+    },
+    "find": {
+      "title": "What You'll Find",
+      "highlight": "Find",
+      "desc": "A quick map highlighting the core aspects of my professional portfolio.",
+      "projects": {
+        "title": "Creative Projects",
+        "subtitle": "Realized applications & systems",
+        "text": "Explore dynamic projects ranging from Flutter/React mobile apps to robust IoT systems, complete with source code repositories and technical write-ups.",
+        "cta": "Browse projects →"
+      },
+      "experience": {
+        "title": "Experience & Roles",
+        "subtitle": "Organizations & Leadership",
+        "text": "Browse through my academic memberships, technical student clubs, system analyst internships, and collaborative team roles.",
+        "cta": "View history →"
+      },
+      "about": {
+        "title": "About & Skills",
+        "subtitle": "My background & core stacks",
+        "text": "Learn about my software engineering principles, download my CV directly, or fill out the contact form to connect with me.",
+        "cta": "Learn more →"
+      }
+    },
+    "featured": {
+      "title": "Featured Projects",
+      "highlight": "Projects",
+      "desc": "A curated selection of my most impactful work, from emergency response systems to agrotech solutions.",
+      "all": "View All Projects",
+      "view": "View Details"
+    },
+    "banner": {
+      "title": "Let's build something together.",
+      "text": "Let's connect, share ideas, build something awesome, or simply say hello!",
+      "cta": "Contact Me",
+      "cv": "Download CV"
+    }
+  },
+  "About": {
+    "hero": {
+      "title": "System Analyst",
+      "subtitle1": "UI/UX Designer",
+      "subtitle2": "Software Developer",
+      "text": "I am Dimas Rofi' Purnomo, an Information Technology student at the Faculty of Computer Science, University of Jember, with interests in System Analysis, UI/UX Design, and Software Development. Experienced in translating business requirements into functional system designs, creating UML documentation, designing user-centered interfaces, and developing web and mobile applications through academic projects. Actively involved in student organizations while continuously improving my technical and collaborative skills to build meaningful digital solutions.",
+      "cv": "Download CV"
+    },
+    "expertise": {
+    "title": "Hard Skills",
+    "highlight": "Skills",
+
+    "analysis": {
+      "title": "System Analysis",
+      "p1": "Requirements Gathering",
+      "p2": "Business Process Analysis",
+      "p3": "UML Modeling",
+      "p4": "SRS Documentation",
+      "p5": "Use Case Analysis",
+      "p6": "Functional Requirements"
+    },
+
+    "software": {
+      "title": "Software Development",
+      "p1": "REST API Development",
+      "p2": "Database Design",
+      "p3": "Web Development",
+      "p4": "Mobile Development",
+      "p5": "System Integration",
+      "p6": "Software Testing"
+    },
+
+    "uiux": {
+      "title": "UI/UX Design",
+      "p1": "User Research",
+      "p2": "User Flow",
+      "p3": "Wireframing",
+      "p4": "Prototyping",
+      "p5": "Usability Testing",
+      "p6": "Design System"
+    }
+  },
+  "soft": {
+      "title": "Soft Skills",
+      "highlight": "Skills",
+      "s1": "Analytical Thinking",
+      "s2": "Problem Solving",
+      "s3": "Communication",
+      "s4": "Team Collaboration",
+      "s5": "Leadership",
+      "s6": "Time Management",
+      "s7": "Adaptability",
+      "s8": "Technical Writing",
+      "s9": "Critical Thinking"
+    },
+    "stack": {
+      "title": "The Tech Stack",
+      "highlight": "Stack",
+      "desc": "Tools and technologies I use throughout the software development lifecycle.",
+      "categories": {
+        "languages": "Programming Languages",
+        "frameworks": "Frameworks & Libraries",
+        "databases": "Databases",
+        "designDoc": "Design & Documentation",
+        "deployment": "Deployment",
+        "pm": "Project Management",
+        "versionControl": "Version Control",
+        "testing": "Testing"
+      }
+    },
+    "journey": {
+      "title": "Academic",
+      "highlight": "Journey",
+      "edu": {
+        "badge": "2024 - Present",
+        "degree": "Undergraduate Student in Information Technology",
+        "school": "University of Jember",
+        "gpa": "GPA: 3.80 / 4.00",
+        "coursework": "Relevant Coursework",
+        "courses": [
+          "System Analysis & Design",
+          "UI/UX Design",
+          "Software Development",
+          "Database Management Systems",
+          "Application Programming Interface (API)",
+          "Object-Oriented Programming",
+          "Web Programming",
+          "Mobile Programming",
+          "Algorithms & Programming"
+        ]
+      }
+    },
+    "connect": {
+      "title": "Let's",
+      "highlight": "Connect",
+      "text": "Let's connect, share ideas, build something awesome, or simply say hello!",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "Email",
+      "cv": "CV"
+    }
+  },
+  "Projects": {
+    "experience": {
+      "title": "Project Experience",
+      "subtitle": "A collection of academic projects covering system analysis, UI/UX design, and software engineering.",
+      "noProjects": "No projects found for the selected filter."
+    },
+    "timeline": {
+      "title": "Project Timeline"
+    },
+    "learned": {
+      "title": "What I Learned",
+
+      "analysis": {
+        "title": "System Analysis",
+        "p1": "Requirements Gathering",
+        "p2": "Stakeholder Analysis",
+        "p3": "Business Process Analysis",
+        "p4": "Use Case Analysis",
+        "p5": "Functional Requirements",
+        "p6": "UML Modeling",
+        "p7": "System Documentation",
+        "p8": "Software Requirements Specification (SRS)"
+      },
+
+      "development": {
+        "title": "Software Development",
+        "p1": "Web Development",
+        "p2": "Mobile Development",
+        "p3": "REST API Development",
+        "p4": "Database Design",
+        "p5": "Authentication & Authorization",
+        "p6": "System Integration",
+        "p7": "Software Testing",
+        "p8": "Version Control with Git"
+      },
+
+      "uiux": {
+        "title": "UI/UX Design",
+        "p1": "User Research",
+        "p2": "User Persona",
+        "p3": "User Journey Mapping",
+        "p4": "Affinity Diagram",
+        "p5": "Information Architecture",
+        "p6": "Wireframing",
+        "p7": "High-Fidelity Prototyping",
+        "p8": "Usability Testing"
+      },
+
+      "team": {
+        "title": "Professional Skills",
+        "p1": "Cross-functional Collaboration",
+        "p2": "Technical Documentation",
+        "p3": "Project Coordination",
+        "p4": "Agile Development",
+        "p5": "Communication",
+        "p6": "Problem Solving",
+        "p7": "Time Management",
+        "p8": "Continuous Learning"
+      }
+    },
+    "details": {
+      "duration": "Duration",
+      "teamSize": "Team Size",
+      "liveDemo": "Live Demo",
+      "githubRepo": "GitHub Repo",
+      "figmaDesign": "Figma Design",
+      "techDocs": "Technical Docs",
+      "overview": "Project Overview",
+      "background": "Background",
+      "problem": "Problem Statement",
+      "solution": "Solution",
+      "impact": "Impact",
+      "contributions": "My Contributions",
+      "forged": "Forged With",
+      "showcase": "System Showcase",
+      "screenshotOf": "Screenshot {current} of {total}",
+      "other": "Other Operations"
+    }
+  },
+  "Organization": {
+    "title": "Organization Experience",
+    "subtitle": "Experiences that shaped my communication, leadership, collaboration, and project coordination skills through academic organizations and committees.",
+    "timeline": "Timeline",
+    "pr": "PUBLIC RELATIONS",
+    "coordinator": "COORDINATOR",
+    "secretary": "SECRETARY",
+    "categories": {
+      "pr": "PUBLIC RELATIONS",
+      "lead": "ORGANIZATIONAL LEADERSHIP",
+      "pm": "PROJECT & EVENT MANAGEMENT",
+      "team": "COLLABORATION"
+    },
+    "skills": {
+      "pr": {
+        "p1": "Digital Communication",
+        "p2": "Content Management",
+        "p3": "Public Speaking",
+        "p4": "Community Engagement",
+        "p5": "Information Dissemination",
+        "p6": "Stakeholder Relations"
+      },
+      "lead": {
+        "p1": "Team Coordination",
+        "p2": "Decision Making",
+        "p3": "Problem Solving",
+        "p4": "Conflict Management",
+        "p5": "Responsibility",
+        "p6": "Initiative"
+      },
+      "pm": {
+        "p1": "Event Organizing",
+        "p2": "Scheduling",
+        "p3": "Task Management",
+        "p4": "Agile Collaboration",
+        "p5": "Documentation",
+        "p6": "Operational Planning"
+      },
+      "team": {
+        "p1": "Cross-functional Teamwork",
+        "p2": "Adaptability",
+        "p3": "Empathy",
+        "p4": "Active Listening",
+        "p5": "Knowledge Sharing",
+        "p6": "Time Management"
+      }
+    },
+    "other": {
+      "title": "Other Committee Experiences"
+    },
+    "gallery": {
+      "title": "Event Gallery"
+    },
+    "learned": {
+      "title": "What I Learned"
+    }
+  },
+  "Database": {
+    "projects": {
+      "safe": {
+        "title": "SAFE",
+        "subtitle": "Smart Accident & Emergency",
+        "description": "An emergency response platform integrated with maps and real-time cloud messaging, for rapid accident reporting.",
+        "subRole": "FULL-STACK MOBILE DEVELOPER & SYSTEM ANALYST",
+        "background": "Rapid growth of vehicle usage has caused an increase in road accidents. Delays in emergency service responses can lead to higher fatality rates.",
+        "problem": "Accident victims or witnesses often struggle to report coordinates accurately, causing delayed emergency response dispatch.",
+        "solution": "A mobile application integrating real-time maps and automated location tracking with cloud notification relays.",
+        "impact": "Reduces response times by 35% through coordinate-based routing and automatic nearest hospital detection.",
+        "contributions": ["DATABASE DESIGN", "REALTIME NOTIFICATIONS", "MOBILE PROTOTYPE", "REST API DEVELOPMENT", "UML MODELING", "TESTING & DEBUGGING"],
+        "lessonsLearned": {
+          "technical": "Learned to manage background location tracking services in Flutter and optimize spatial queries in database layers.",
+          "analysis": "Successfully mapped complex business workflows of paramedic dispatching into simple UML state charts.",
+          "softSkills": "Emphasized the importance of continuous testing feedback and communication in multi-disciplinary team environments.",
+          "challenges": "Faced issues with notification delays, resolved by implementing automated retry queues."
+        }
+      },
+      "tempura": {
+        "title": "TEMPURA",
+        "subtitle": "Smart Tempe Fermentation Monitoring System",
+        "description": "Real-time monitoring system for food fermentation processes using ESP32 sensors and mobile analytics.",
+        "subRole": "SYSTEM ANALYST & DEVELOPER",
+        "background": "Traditional food fermentation relies heavily on manual inspections, which are prone to batch inconsistencies.",
+        "problem": "Temperature and humidity fluctuations during fermentation can ruin batches without timely interventions.",
+        "solution": "An ESP32-based hardware monitor linked to a Postgres database, showing real-time metrics on a mobile dashboard.",
+        "impact": "Eliminated batch wastage completely by alerting developers within seconds of temperature anomalies.",
+        "contributions": ["FIRMWARE DEVELOPMENT", "HARDWARE WIRING", "DATABASE LOGGING", "DASHBOARD DESIGN"],
+        "blueprints": ["Hardware Schema", "Database Relational Model"],
+        "journey": [
+          {"title": "Sensors Calibration", "desc": "Testing DHT22 sensors, calibrating readings, and setting up energy-efficient sleep cycles on ESP32."},
+          {"title": "Endpoint Integration", "desc": "Deploying lightweight HTTP logging endpoints and streaming JSON telemetry data from the sensors."}
+        ],
+        "responsibilities": [
+          "Wrote micro-controller C++ firmware for reading sensor values.",
+          "Configured deep sleep modes to expand the hardware's battery life.",
+          "Developed a mobile app interface for tracking logs in realtime."
+        ],
+        "lessonsLearned": {
+          "technical": "Mastered power saving modes in ESP32 and learned telemetry data structures.",
+          "analysis": "Fleshed out clear physical requirements of IoT node boxes.",
+          "softSkills": "Improved division of labor and integration alignment checks in micro teams.",
+          "challenges": "Sensor fluctuations due to condensation resolved using custom waterproof packaging."
+        }
+      },
+      "kandang-digital": {
+        "title": "KANDANG DIGITAL",
+        "subtitle": "(KANDANG DIGITAL INTERFACE)",
+        "description": "Comprehensive agrotech solution for tracking livestock health, inventory, and farm productivity.",
+        "subRole": "UI/UX DESIGNER & SYSTEM ANALYST",
+        "background": "Modern livestock farming faces difficulties in tracking animal histories, vaccination records, and overall farm yields.",
+        "problem": "Farmers typically rely on offline logbooks, leading to lost history data and delayed vet consultations.",
+        "solution": "A mobile application UI design featuring simple dashboard tracking, vaccination timeline logs, and vet advice portals.",
+        "impact": "Improves data logging efficiency for farmers and eases remote veterinary monitoring.",
+        "contributions": ["USER INTERVIEWS", "WIREFRAME FLOWS", "HIGH-FIDELITY PROTOTYPES", "USABILITY SURVEYS"],
+        "blueprints": ["User Flows", "High-Fi Visual System"],
+        "journey": [
+          {"title": "User Interviews", "desc": "Visiting local dairy farms to understand typical workflows, farmer pain points, and terminology."},
+          {"title": "Visual Theme System", "desc": "Designing modern, bright badges, livestock icons, and high-readability layouts in Figma."}
+        ],
+        "responsibilities": [
+          "Conducted onsite user interviews and created user persona profiles.",
+          "Designed wireframes and interactive high-fidelity prototypes in Figma.",
+          "Ran system usability testing (SUS) to evaluate navigation efficiency."
+        ],
+        "lessonsLearned": {
+          "technical": "Learned advanced auto-layout constraints and component variants in Figma.",
+          "analysis": "Mapped unstructured farmer feedback into concrete feature requirements.",
+          "softSkills": "Honed empathy in user research and learned to accept design feedback constructively.",
+          "challenges": "Low tech-literacy of target users resolved by simplifying icons and layout paths."
+        }
+      },
+      "sipinjam": {
+        "title": "SIPINJAM",
+        "subtitle": "(SIPINJAM LOAN SYSTEM)",
+        "description": "Internal tool for managing equipment loans, tracking inventory status, and generating reports.",
+        "subRole": "SYSTEM ANALYST & WEB DEVELOPER",
+        "background": "Universities often face issues keeping track of high-value laboratory equipment, leading to lost items or scheduling overlaps.",
+        "problem": "Manual paper logbooks make it difficult to audit who has borrowed what equipment, causing delays in return reporting.",
+        "solution": "A web dashboard built with Laravel and MySQL featuring QR code generation and automated email alerts for overdue returns.",
+        "impact": "Decreased tool losses to 0% and reduced administrative overhead by 60% over a one-semester trial.",
+        "contributions": ["FRONTEND DEVELOPMENT", "DATABASE STRUCTURING", "QR SCANNER INTEGRATION", "TESTING & VALIDATION"],
+        "blueprints": ["Database Schema", "UI Site Map Flow"],
+        "journey": [
+          {"title": "Stakeholder Interviews", "desc": "Analyzing requirements with lab administrators to map the loan approval and return workflows."},
+          {"title": "MVC Core Implementation", "desc": "Fleshing out the Laravel models, controller routing logic, and MySQL database index constraints."}
+        ],
+        "responsibilities": [
+          "Configured relational model associations and migrations in MySQL database.",
+          "Developed dynamic dashboard views using Blade templates.",
+          "Integrated email notifications using Laravel Mailables."
+        ],
+        "lessonsLearned": {
+          "technical": "Gained deep understanding of Laravel's ORM relationships and transaction lockouts.",
+          "analysis": "Understood how to translate administrative workflows into modular role permissions.",
+          "softSkills": "Practiced collaborative code reviews and managing pull requests on GitHub.",
+          "challenges": "Faced layout alignment issues on old admin monitors, resolved with flexbox custom styling."
+        }
+      },
+      "proapps": {
+        "title": "PROAPPS",
+        "subtitle": "(PROAPPS MONITORING CORE)",
+        "description": "Architecting the business process and technical requirements for a multi-department program monitoring system.",
+        "subRole": "SYSTEM ANALYST",
+        "background": "Government agencies run multiple social programs simultaneously, but monitoring progress across silos is highly challenging.",
+        "problem": "Departments submit physical forms in varying formats, making it impossible to evaluate overall performance in real-time.",
+        "solution": "A unified software specification and process architecture defining standard data formats, API models, and UML flows.",
+        "impact": "Provided an approved system model blueprint ready for development, cutting specification time in half.",
+        "contributions": ["SYSTEM ARCHITECTURE DESIGN", "BUSINESS PROCESS RE-ENGINEERING", "SRS DOCUMENTATION"],
+        "blueprints": ["BPMN Diagram", "UML Class Model"],
+        "journey": [
+          {"title": "Requirement Engineering", "desc": "Holding focus groups with department heads to map organizational workflows and identify functional gaps."},
+          {"title": "UML Modeling", "desc": "Drawing use cases, activity sequences, and relational structures using drawing design tools."}
+        ],
+        "responsibilities": [
+          "Conducted requirements elicitation workshops and drafted the formal Software Requirements Specification (SRS).",
+          "Designed all UML diagrams including use case, activity, and class definitions.",
+          "Constructed process wireframes modeling form inputs across all departments."
+        ],
+        "lessonsLearned": {
+          "technical": "Mastered UML notation guidelines and system architecture standard designs.",
+          "analysis": "Successfully separated functional requirements from operational constraints.",
+          "softSkills": "Honed presentation skills to translate complex designs to non-technical stakeholders.",
+          "challenges": "Resolving conflicting requirements between departments by drafting dynamic data objects."
+        }
+      }
+    },
+    "organizations": {
+      "0": {
+        "name": "HIMATIF UNEJ",
+        "role": "Public Relations Staff",
+        "period": "Jan 2025-Present",
+        "description": "Managing external communication and relations between the organization and external stakeholders."
+      },
+      "1": {
+        "name": "Pembinaan Gemastik",
+        "role": "Public Relations Coordinator",
+        "period": "May-July 2026",
+        "description": "Coordinating mentorship events and academic training for IT newcomers."
+      },
+      "2": {
+        "name": "IT Development Training",
+        "role": "Public Relations Staff",
+        "period": "Mar-Apr 2026",
+        "description": "Coordinating mentorship events and academic training for IT newcomers."
+      },
+      "3": {
+        "name": "Character of Development",
+        "role": "Secretary",
+        "period": "Dec 2025-Feb 2026",
+        "description": "Coordinating mentorship events and academic training for IT newcomers."
+      },
+      "4": {
+        "name": "Information Technology Challenge",
+        "role": "Secretary",
+        "period": "Aug-Oct 2025",
+        "description": "Responsible for managing administrative documentations, logs, meeting agendas, and database records."
+      },
+      "5": {
+        "name": "SkripsiTalk",
+        "role": "Public Relations Staff",
+        "period": "May-June 2025",
+        "description": "Responsible for managing administrative documentations, logs, meeting agendas, and database records."
+      },
+      "6": {
+        "name": "IThings",
+        "role": "Production Coordinator",
+        "period": "Mar 2026 - Present",
+        "description": "Coordinating merchandise production, managing operational workflows, and collaborating with team members to ensure product quality and timely delivery for HIMATIF business initiatives."
+      },
+      "7": {
+        "name": "MAKRAB HIMATIF UNEJ",
+        "role": "Public Relations Staff",
+        "period": "Nov 2025 - Dec 2025",
+        "description": "Supported communication, promotional activities, and participant engagement to foster stronger relationships among HIMATIF members during the annual gathering program."
+      }
+    },
+    "committees": {
+      "0": {
+        "role": "Production Coordinator",
+        "event": "Ithings 2026"
+      },
+      "1": {
+        "role": "Public Relations Staff",
+        "event": "Makrab HIMATIF UNEJ 2025"
+      },
+      "2": {
+        "role": "Public Relations Staff",
+        "event": "IT Development Training 2025"
+      }
+    },
+    "learned": {
+      "comm": "Honed public presentation and stakeholder diplomacy skills.",
+      "pm": "Learned task scheduling, dependency mapping, and event logs.",
+      "team": "Built trust, delegated workloads, and resolved structural blockers.",
+      "doc": "Organized project specifications, minutes of meetings, and archives."
+    }
+  }
+}

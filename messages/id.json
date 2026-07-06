@@ -1,0 +1,472 @@
+{
+  "Navbar": {
+    "home": "Beranda",
+    "projects": "Proyek",
+    "organization": "Organisasi",
+    "about": "Tentang",
+    "contact": "Hubungi Saya"
+  },
+  "Footer": {
+    "copyright": "© 2026 Hak Cipta Dilindungi. Dibuat dengan keterampilan digital menggunakan Flutter, Laravel, dan Go."
+  },
+  "Home": {
+    "hero": {
+      "title": "Selamat Datang di",
+      "portfolio": "Portofolio Saya",
+      "subtitle": "Portofolio ini menampilkan proyek, ide, dan pengalaman yang membentuk perjalanan saya sebagai system analyst, ui/ux design, dan software developer. Dari analisis kebutuhan dan pemodelan UML hingga sistem backend, teknologi cloud, dan produk yang berpusat pada pengguna, setiap proyek di sini mewakili proses pembelajaran berkelanjutan, kolaborasi, dan pemecahan masalah yang bermakna.",
+      "explore": "Jelajahi Proyek",
+      "cv": "Unduh CV",
+      "connect": "Hubungi Saya"
+    },
+    "stats": {
+      "projects": "Proyek Selesai",
+      "orgs": "Organisasi",
+      "gpa": "IPK Akademik"
+    },
+    "find": {
+      "title": "Apa Yang Anda Temukan",
+      "highlight": "Temukan",
+      "desc": "Peta cepat yang menyoroti aspek-aspek utama dari portofolio profesional saya.",
+      "projects": {
+        "title": "Proyek Kreatif",
+        "subtitle": "Aplikasi & sistem yang terealisasi",
+        "text": "Jelajahi proyek dinamis mulai dari aplikasi mobile Flutter/React hingga sistem IoT yang tangguh, lengkap dengan repositori kode sumber dan dokumentasi teknis.",
+        "cta": "Jelajahi proyek →"
+      },
+      "experience": {
+        "title": "Pengalaman & Peran",
+        "subtitle": "Organisasi & Kepemimpinan",
+        "text": "Telusuri keanggotaan akademik saya, klub mahasiswa teknis, magang analis sistem, dan peran tim kolaboratif.",
+        "cta": "Lihat riwayat →"
+      },
+      "about": {
+        "title": "Tentang & Keahlian",
+        "subtitle": "Latar belakang & teknologi utama saya",
+        "text": "Pelajari prinsip rekayasa perangkat lunak saya, unduh CV saya secara langsung, atau isi formulir kontak untuk terhubung dengan saya.",
+        "cta": "Pelajari lebih lanjut →"
+      }
+    },
+    "featured": {
+      "title": "Proyek Unggulan",
+      "highlight": "Proyek",
+      "desc": "Pilihan proyek terbaik saya, dari sistem tanggap darurat hingga solusi agroteknologi.",
+      "all": "Lihat Semua Proyek",
+      "view": "Lihat Detail"
+    },
+    "banner": {
+      "title": "Mari membangun sesuatu bersama.",
+      "text": "Yuk terhubung, berbagi ide, membuat sesuatu yang keren, atau sekadar menyapa!",
+      "cta": "Hubungi Saya",
+      "cv": "Unduh CV"
+    }
+  },
+  "About": {
+    "hero": {
+      "title": "System Analyst",
+      "subtitle1": "UI/UX Designer",
+      "subtitle2": "Software Developer",
+      "text": "Saya Dimas Rofi' Purnomo, mahasiswa Teknologi Informasi di Fakultas Ilmu Komputer, Universitas Jember, yang memiliki minat di bidang Analisis Sistem, Desain UI/UX, dan Pengembangan Perangkat Lunak. Berpengalaman dalam menerjemahkan kebutuhan bisnis menjadi rancangan sistem yang fungsional, menyusun dokumentasi UML, merancang antarmuka yang berorientasi pada pengguna, serta mengembangkan aplikasi web dan mobile melalui berbagai proyek akademik. Aktif berorganisasi dan terus mengembangkan kemampuan melalui kolaborasi, pembelajaran, serta penerapan teknologi untuk membangun solusi digital yang bermanfaat.",
+      "cv": "Unduh CV"
+    },
+    "expertise": {
+    "title": "Keterampilan Teknis",
+    "highlight": "Teknis",
+
+    "analysis": {
+      "title": "Analisis Sistem",
+      "p1": "Analisis Kebutuhan",
+      "p2": "Analisis Proses Bisnis",
+      "p3": "Pemodelan UML",
+      "p4": "Dokumentasi SRS",
+      "p5": "Analisis Use Case",
+      "p6": "Kebutuhan Fungsional"
+    },
+
+    "software": {
+      "title": "Pengembangan Perangkat Lunak",
+      "p1": "Pengembangan REST API",
+      "p2": "Perancangan Basis Data",
+      "p3": "Pengembangan Aplikasi Web",
+      "p4": "Pengembangan Aplikasi Mobile",
+      "p5": "Integrasi Sistem",
+      "p6": "Pengujian Perangkat Lunak"
+    },
+
+    "uiux": {
+      "title": "Desain UI/UX",
+      "p1": "Riset Pengguna",
+      "p2": "Alur Pengguna",
+      "p3": "Wireframing",
+      "p4": "Prototyping",
+      "p5": "Pengujian Kegunaan",
+      "p6": "Sistem Desain"
+    }
+  },
+  "soft": {
+      "title": "Keterampilan Interpersonal",
+      "highlight": "Interpersonal",
+      "s1": "Berpikir Analitis",
+      "s2": "Pemecahan Masalah",
+      "s3": "Komunikasi",
+      "s4": "Kolaborasi Tim",
+      "s5": "Kepemimpinan",
+      "s6": "Manajemen Waktu",
+      "s7": "Kemampuan Beradaptasi",
+      "s8": "Penulisan Teknis",
+      "s9": "Berpikir Kritis"
+    },
+    "stack": {
+      "title": "Teknologi yang Digunakan",
+      "highlight": "Teknologi",
+      "desc": "Alat dan teknologi yang saya gunakan sepanjang siklus hidup pengembangan perangkat lunak.",
+      "categories": {
+        "languages": "Bahasa Pemrograman",
+        "frameworks": "Framework & Pustaka",
+        "databases": "Basis Data",
+        "designDoc": "Desain & Dokumentasi",
+        "deployment": "Penyebaran",
+        "pm": "Manajemen Proyek",
+        "versionControl": "Kontrol Versi",
+        "testing": "Pengujian"
+      }
+    },
+    "journey": {
+      "title": "Perjalanan",
+      "highlight": "Akademis",
+      "edu": {
+        "badge": "2024 - Sekarang",
+        "degree": "Mahasiswa Sarjana Teknologi Informasi",
+        "school": "Universitas Jember",
+        "gpa": "IPK: 3.80 / 4.00",
+        "coursework": "Mata Kuliah Relevan",
+        "courses": [
+          "Analisis & Perancangan Sistem",
+          "Desain UI/UX",
+          "Pengembangan Perangkat Lunak",
+          "Sistem Manajemen Basis Data",
+          "Antarmuka Pemrograman Aplikasi (API)",
+          "Pemrograman Berorientasi Objek",
+          "Pemrograman Web",
+          "Pemrograman Mobile",
+          "Algoritma & Pemrograman"
+        ]
+      },
+      "interest": {
+        "badge": "Fokus Masa Depan",
+        "title": "Bidang Minat",
+        "i1": "Arsitektur Serverless",
+        "i2": "Rekayasa Keamanan Cloud",
+        "i3": "Otomatisasi Sistem & CI/CD",
+        "i4": "Psikologi Pengalaman Pengguna"
+      }
+    },
+    "connect": {
+      "title": "Mari",
+      "highlight": "Terhubung",
+      "text": "Yuk terhubung, berbagi ide, membuat sesuatu yang keren, atau sekadar menyapa!",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "Email",
+      "cv": "CV"
+    }
+  },
+  "Projects": {
+    "experience": {
+      "title": "Pengalaman Proyek",
+      "subtitle": "Kumpulan proyek akademis yang mencakup analisis sistem, desain UI/UX, dan rekayasa perangkat lunak.",
+      "noProjects": "Tidak ada proyek yang ditemukan untuk filter yang dipilih."
+    },
+    "timeline": {
+      "title": "Linimasa Proyek"
+    },
+    "learned": {
+      "title": "Apa yang Saya Pelajari",
+
+      "analysis": {
+        "title": "Analisis Sistem",
+        "p1": "Analisis Kebutuhan",
+        "p2": "Analisis Stakeholder",
+        "p3": "Analisis Proses Bisnis",
+        "p4": "Analisis Use Case",
+        "p5": "Analisis Kebutuhan Fungsional",
+        "p6": "Pemodelan UML",
+        "p7": "Dokumentasi Sistem",
+        "p8": "Software Requirements Specification (SRS)"
+      },
+
+      "development": {
+        "title": "Pengembangan Perangkat Lunak",
+        "p1": "Pengembangan Aplikasi Web",
+        "p2": "Pengembangan Aplikasi Mobile",
+        "p3": "Pengembangan REST API",
+        "p4": "Perancangan Basis Data",
+        "p5": "Autentikasi & Otorisasi",
+        "p6": "Integrasi Sistem",
+        "p7": "Pengujian Perangkat Lunak",
+        "p8": "Version Control dengan Git"
+      },
+
+      "uiux": {
+        "title": "Desain UI/UX",
+        "p1": "Riset Pengguna",
+        "p2": "Penyusunan User Persona",
+        "p3": "User Journey Mapping",
+        "p4": "Affinity Diagram",
+        "p5": "Arsitektur Informasi",
+        "p6": "Wireframing",
+        "p7": "High-Fidelity Prototyping",
+        "p8": "Pengujian Kegunaan"
+      },
+
+      "team": {
+        "title": "Keterampilan Profesional",
+        "p1": "Kolaborasi Lintas Tim",
+        "p2": "Dokumentasi Teknis",
+        "p3": "Koordinasi Proyek",
+        "p4": "Pengembangan Agile",
+        "p5": "Komunikasi",
+        "p6": "Pemecahan Masalah",
+        "p7": "Manajemen Waktu",
+        "p8": "Pembelajaran Berkelanjutan"
+      }
+    },
+    "details": {
+      "research": "Riset",
+      "systemDesign": "Desain Sistem",
+      "duration": "Durasi",
+      "teamSize": "Ukuran Tim",
+      "liveDemo": "Demo Langsung",
+      "githubRepo": "Repositori GitHub",
+      "figmaDesign": "Desain Figma",
+      "techDocs": "Dokumen Teknis",
+      "overview": "Ikhtisar Proyek",
+      "background": "Latar Belakang",
+      "problem": "Pernyataan Masalah",
+      "solution": "Solusi",
+      "impact": "Dampak",
+      "contributions": "Kontribusi Saya",
+      "blueprints": "Cetak Biru Teknis",
+      "blueprintOf": "Cetak Biru {current} dari {total}",
+      "blueprintTip": "Klik pada skema visual untuk melihat cetak biru resolusi penuh dan lapisan struktur data dalam penampil zoom.",
+      "journey": "Perjalanan Pengembangan",
+      "forged": "Dibuat Dengan",
+      "team": "Tim & Peran",
+      "responsibilities": "Tanggung Jawab Pribadi",
+      "showcase": "Showcase Sistem",
+      "screenshotOf": "Tangkapan Layar {current} dari {total}",
+      "postmortem": "Analisis Post-Mortem",
+      "technical": "Teknis",
+      "analysis": "Analisis",
+      "softSkills": "Keahlian Interpersonal",
+      "challenges": "Tantangan",
+      "cta": {
+        "title": "Tertarik dengan proyek ini?",
+        "text": "Tertarik dengan alur logika, struktur database, parameter yang digunakan, atau lisensi? Hubungi saya.",
+        "contact": "Hubungi Saya"
+      },
+      "other": "Operasi Lainnya"
+    }
+  },
+  "Organization": {
+    "title": "Pengalaman Organisasi",
+    "subtitle": "Pengalaman yang membentuk keterampilan komunikasi, kepemimpinan, kolaborasi, dan koordinasi proyek saya melalui organisasi akademik dan komite.",
+    "timeline": "Linimasa",
+    "categories": {
+      "comm": "KOMUNIKASI",
+      "pr": "HUBUNGAN MAHASISWA",
+      "lead": "KEPEMIMPINAN ORGANISASI",
+      "pm": "MANAJEMEN PROYEK & ACARA",
+      "team": "KOLABORASI",
+      "doc": "DOKUMENTASI"
+    },
+    "skills": {
+      "pr": {
+        "p1": "Komunikasi Digital",
+        "p2": "Manajemen Konten",
+        "p3": "Presentasi Publik",
+        "p4": "Keterlibatan Komunitas",
+        "p5": "Penyebaran Informasi",
+        "p6": "Hubungan Pemangku Kepentingan"
+      },
+      "lead": {
+        "p1": "Koordinasi Tim",
+        "p2": "Pengambilan Keputusan",
+        "p3": "Pemecahan Masalah",
+        "p4": "Manajemen Konflik",
+        "p5": "Tanggung Jawab",
+        "p6": "Inisiatif"
+      },
+      "pm": {
+        "p1": "Penyelenggaraan Acara",
+        "p2": "Penjadwalan",
+        "p3": "Manajemen Tugas",
+        "p4": "Kolaborasi Agile",
+        "p5": "Dokumentasi",
+        "p6": "Perencanaan Operasional"
+      },
+      "team": {
+        "p1": "Kerja Sama Lintas Fungsi",
+        "p2": "Adaptabilitas",
+        "p3": "Empati",
+        "p4": "Mendengarkan Aktif",
+        "p5": "Berbagi Pengetahuan",
+        "p6": "Manajemen Waktu"
+      }
+    },
+    "gallery": {
+      "title": "Galeri Acara"
+    },
+    "certificates": {
+      "title": "Sertifikasi"
+    },
+    "learned": {
+      "title": "Apa Yang Saya Pelajari"
+    },
+    "cta": {
+      "title": "Membangun Bersama.",
+      "subtitle": "Saya percaya bahwa kepemimpinan dan kolaborasi bekerja sama untuk menciptakan dampak nyata dalam komunitas.",
+      "collaborate": "Mari Berkolaborasi.",
+      "text": "Tertarik pada teknologi, komunitas, atau proyek? Hubungi saya! Mari bangun koneksi."
+    }
+  },
+  "Database": {
+    "projects": {
+      "safe": {
+        "title": "SAFE",
+        "subtitle": "(SMART ACCIDENT & EMERGENCY)",
+        "description": "Platform tanggap darurat yang terintegrasi dengan peta dan pengiriman pesan cloud waktu nyata, untuk pelaporan kecelakaan yang cepat.",
+        "subRole": "PENGEMBANG FULL-STACK MOBILE & ANALIS SISTEM",
+        "overview": "SAFE (Smart Accident & Emergency) adalah aplikasi mobile yang dirancang untuk mendukung respons darurat yang lebih cepat selama kecelakaan lalu lintas dan keadaan darurat medis. Sistem ini memanfaatkan sensor smartphone, notifikasi real-time, dan berbagi lokasi langsung untuk membantu pengguna memberi tahu kontak tepercaya secara otomatis dalam situasi kritis.\n\nAplikasi ini dikembangkan sebagai proyek akademik kolaboratif yang melibatkan aktivitas mobile, backend, dan analisis sistem. Dengan mengintegrasikan Firebase Cloud Messaging dan layanan Google Maps, SAFE memungkinkan pengguna untuk mengirim peringatan darurat yang disertai dengan informasi lokasi yang akurat, membantu meningkatkan aksesibilitas dan koordinasi selama peristiwa darurat.\n\nDalam proyek ini, saya bekerja sebagai Full-Stack Mobile Developer and System Analyst, berkontribusi dalam analisis kebutuhan, dokumentasi UML, pengembangan API backend menggunakan Golang Fiber, pengembangan mobile dengan Flutter, dan desain database menggunakan PostgreSQL. Saya berkolaborasi erat dengan tim sepanjang siklus hidup pengembangan perangkat lunak untuk memastikan bahwa implementasi teknis selaras dengan kebutuhan pengguna dan persyaratan sistem.",
+        "techStack": {
+          "Flutter": "Pengembangan mobile lintas platform.",
+          "Dart": "Logika aplikasi berperforma tinggi.",
+          "Golang": "Bahasa pemrograman utama untuk membangun API.",
+          "Fiber": "Framework web cepat untuk routing dan request.",
+          "REST API": "Desain web API untuk integrasi klien-server.",
+          "PostgreSQL": "Database produksi untuk menyimpan data aplikasi.",
+          "Firebase Cloud Messaging": "Notifikasi push waktu nyata untuk peringatan darurat.",
+          "Google Maps API": "Pelacakan lokasi langsung dan rendering peta.",
+          "Figma": "Desain UI/UX dan wireframing."
+        }
+      },
+      "tempura": {
+        "title": "TEMPURA",
+        "subtitle": "(PEMANTAU FERMENTASI TEMPURA)",
+        "description": "Sistem pemantauan waktu nyata untuk proses fermentasi makanan menggunakan sensor ESP32 dan analitik mobile.",
+        "subRole": "ANALIS SISTEM & PENGEMBANG",
+        "overview": "TEMPURA adalah solusi berbasis IoT yang dirancang untuk memantau dan mengontrol suhu serta kelembaban selama proses fermentasi tempe. Sistem ini menggabungkan kontrol lingkungan otomatis dengan pencatatan data produksi untuk mendukung aktivitas fermentasi yang lebih konsisten dan efisien.\n\nProyek ini mengintegrasikan perangkat ESP32, aplikasi mobile, dan layanan backend untuk menyediakan pemantauan real-time dan visibilitas operasional. Dengan mendigitalisasi praktik fermentasi tradisional, TEMPURA mendorong adopsi teknologi dalam proses agroindustri lokal.\n\nSebagai System Analyst, saya bertanggung jawab atas rekayasa kebutuhan, analisis proses bisnis, dokumentasi UML, desain database, dan perencanaan arsitektur sistem untuk memastikan integrasi yang mulus antara perangkat IoT dan komponen perangkat lunak.",
+        "techStack": {
+          "ESP32": "Mikrokontroler IoT untuk membaca sensor dan mengendalikan relay.",
+          "DHT22": "Sensor suhu dan kelembaban untuk pemantauan fermentasi.",
+          "Relay Module": "Sakelar aktuator untuk kontrol pemanas dan kipas otomatis.",
+          "Flutter": "Aplikasi pemantauan mobile lintas platform.",
+          "Dart": "Logika performa tinggi untuk pembaruan aplikasi mobile waktu nyata.",
+          "Golang": "Pengembangan layanan backend untuk ingesti data IoT.",
+          "PostgreSQL": "Database relasional untuk manajemen data produksi.",
+          "Figma": "Desain antarmuka pengguna dan pembuatan prototipe visual.",
+          "Draw-io": "Pemodelan sistem dan dokumentasi desain."
+        }
+      },
+      "kandang-digital": {
+        "title": "KANDANG DIGITAL",
+        "subtitle": "(ANTARMUKA KANDANG DIGITAL)",
+        "description": "Solusi agroteknologi komprehensif untuk melacak kesehatan ternak, inventaris, dan produktivitas pertanian.",
+        "subRole": "DESAINER UI/UX & ANALIS SISTEM",
+        "overview": "KandangDigital adalah aplikasi mobile yang dirancang untuk membantu peternak kambing dalam mengelola keuangan, inventaris hewan ternak, dan aktivitas pemantauan kesehatan melalui platform digital yang terintegrasi.\n\nAplikasi ini berfokus pada peningkatan efisiensi operasional dengan menyediakan alat untuk pencatatan keuangan, manajemen ternak, dan pelacakan kesehatan dalam satu sistem yang disesuaikan dengan aktivitas sehari-hari peternak.\n\nSebagai UI/UX Designer dan System Analyst, saya melakukan riset pengguna, mengembangkan persona dan peta perjalanan pengguna, merancang wireframe dan prototipe high-fidelity, serta melakukan pengujian kegunaan untuk memastikan solusi selaras dengan kebutuhan pengguna.",
+        "techStack": {
+          "Figma": "Merancang prototipe interaktif high-fidelity dan mockup.",
+          "User Interviews": "Wawancara Pengguna — Mengumpulkan umpan balik dan wawasan langsung dari peternak kambing.",
+          "Affinity Diagram": "Diagram Afinitas — Mengelompokkan data riset dan mengidentifikasi masalah utama.",
+          "Persona Mapping": "Pemetaan Persona — Mendefinisikan karakteristik dan kebutuhan pengguna target.",
+          "Journey Mapping": "Pemetaan Perjalanan — Memetakan langkah-langkah pengguna selama aktivitas manajemen peternakan.",
+          "Usability Testing": "Usability Testing — Memvalidasi prototipe interaktif dengan pengguna nyata."
+        }
+      },
+      "sipinjam": {
+        "title": "SIPINJAM",
+        "subtitle": "(SISTEM PEMINJAMAN SIPINJAM)",
+        "description": "Alat internal untuk mengelola peminjaman peralatan, melacak status inventaris, dan membuat laporan.",
+        "subRole": "ANALIS SISTEM & PENGEMBANG WEB",
+        "overview": "SIPINJAM adalah sistem informasi berbasis web yang digabungkan dengan autentikasi, manajemen inventaris, modul peminjaman, dan fitur pelaporan untuk menyederhanakan proses administratif serta mendukung praktik manajemen aset yang lebih baik.\n\nDalam proyek ini, saya berkontribusi sebagai System Analyst dan Web Developer, berpartisipasi dalam analisis kebutuhan, desain database, pengembangan Laravel, implementasi autentikasi, dan pengujian sistem.",
+        "techStack": {
+          "HTML": "Struktur antarmuka inventaris berbasis web.",
+          "CSS": "Desain visual dan tata letak kustom.",
+          "JavaScript": "Fitur sisi klien interaktif dan halaman dinamis.",
+          "Bootstrap": "Framework CSS responsif untuk pembuatan gaya UI cepat.",
+          "Laravel": "Framework web full-stack dengan autentikasi bawaan dan ORM.",
+          "PHP": "Bahasa pemrograman sisi server yang menjalankan logika bisnis.",
+          "MySQL": "Database relasional untuk mengelola catatan pinjaman dan aset.",
+          "Git": "Sistem kontrol versi untuk melacak perubahan kode.",
+          "GitHub": "Platform kolaborasi dan repositori hosting kode.",
+          "Laragon": "Lingkungan pengembangan lokal untuk PHP dan MySQL."
+        }
+      },
+      "proapps": {
+        "title": "PROAPPS",
+        "subtitle": "(INTI PEMANTAUAN PROAPPS)",
+        "description": "Merancang proses bisnis dan persyaratan teknis untuk sistem pemantauan program multi-departemen.",
+        "subRole": "ANALIS SISTEM",
+        "overview": "PROAPPS adalah sistem informasi berbasis mobile yang dirancang untuk mendukung manajemen program kerja, dokumentasi, dan koordinasi di dalam HIMATIF, Fakultas Ilmu Komputer, Universitas Jember. Aplikasi ini menerapkan akses berbasis peran untuk meningkatkan komunikasi dan efisiensi operasional di antara anggota organisasi.\n\nProyek ini memusatkan kegiatan organisasi ke dalam satu platform digital, memungkinkan manajemen program kerja, proses dokumentasi, dan penyebaran informasi yang lebih baik. Sistem ini dikembangkan secara kolaboratif menggunakan praktik Agile untuk menyelaraskan solusi teknis dengan kebutuhan pemangku kepentingan.\n\nDalam proyek ini, saya bertindak sebagai System Analyst, berkontribusi pada analisis pemangku kepentingan, pemodelan proses bisnis, dokumentasi UML, desain alur pengguna, dan spesifikasi kebutuhan fungsional.",
+        "techStack": {
+          "Use Case Diagram": "Diagram Use Case — Memodelkan fungsionalitas sistem dan interaksi aktor.",
+          "Activity Diagram": "Diagram Aktivitas — Memetakan logika bisnis dan alur kerja.",
+          "Class Diagram": "Diagram Kelas — Merancang struktur database sistem statis.",
+          "Draw-io": "Pemodelan sistem visual dan diagramming.",
+          "Figma": "Pembuatan mockup UI dan desain alur pengguna.",
+          "Trello": "Manajemen proyek dan pelacakan tugas secara agile.",
+          "Agile Scrum": "Metodologi pengembangan perangkat lunak untuk kolaborasi berulang."
+        }
+      }
+    },
+    "organizations": {
+      "0": {
+        "name": "HIMATIF UNEJ",
+        "role": "Staf Hubungan Mahasiswa (Divisi Media Sosial)",
+        "period": "Jan 2025 - Sekarang",
+        "description": "Mengelola konten digital dan komunikasi organisasi melalui artikel situs web, publikasi media sosial, dan materi promosi untuk mendukung kegiatan akademik dan kemahasiswaan."
+      },
+      "1": {
+        "name": "Pembinaan GEMASTIK (KOMPAK)",
+        "role": "Koordinator Hubungan Mahasiswa",
+        "period": "Mei 2026 - Jul 2026",
+        "description": "Mengoordinasikan komunikasi antara mentor, peserta, dan panitia penyelenggara serta mengelola penyebaran informasi, jadwal, dan materi promosi untuk program pembinaan GEMASTIK 2026."
+      },
+      "2": {
+        "name": "IT Development Training",
+        "role": "Staf Hubungan Mahasiswa",
+        "period": "Mar 2026 - Apr 2026",
+        "description": "Mendukung komunikasi peserta, penyebaran informasi, dan kegiatan promosi untuk program pelatihan pengembangan mobile yang berfokus pada Flutter, Dart, dan integrasi backend."
+      },
+      "3": {
+        "name": "Character of Development",
+        "role": "Sekretaris",
+        "period": "Des 2025 - Feb 2026",
+        "description": "Mengelola dokumentasi administrasi, agenda rapat, surat-menyurat resmi, dan koordinasi panitia untuk mendukung keberhasilan pelaksanaan program Character of Development."
+      },
+      "4": {
+        "name": "Information Technology Challenge (ITeC)",
+        "role": "Sekretaris",
+        "period": "Agu 2025 - Okt 2025",
+        "description": "Mengelola dokumentasi administrasi, agenda rapat, surat-menyurat resmi, dan koordinasi panitia untuk mendukung keberhasilan pelaksanaan acara Information Technology Challenge."
+      },
+      "5": {
+        "name": "SkripsiTalk",
+        "role": "Staf Hubungan Mahasiswa",
+        "period": "Mei 2025 - Jun 2025",
+        "description": "Mendukung komunikasi peserta, kegiatan promosi, dan penyebaran informasi untuk seminar akademik yang berfokus pada persiapan skripsi dan panduan penulisan bagi mahasiswa Teknologi Informasi."
+      },
+      "6": {
+        "name": "IThings",
+        "role": "Koordinator Produksi",
+        "period": "Mar 2026 - Sekarang",
+        "description": "Mengoordinasikan produksi merchandise, mengelola alur kerja operasional, dan berkolaborasi dengan anggota tim untuk memastikan kualitas produk dan pengiriman tepat waktu untuk inisiatif bisnis HIMATIF."
+      },
+      "7": {
+        "name": "MAKRAB HIMATIF UNEJ",
+        "role": "Staf Hubungan Mahasiswa",
+        "period": "Nov 2025 - Des 2025",
+        "description": "Mendukung komunikasi, kegiatan promosi, dan keterlibatan peserta untuk memupuk hubungan yang lebih kuat di antara anggota HIMATIF selama program malam keakraban tahunan."
+      }
+    }
+  }
+}
