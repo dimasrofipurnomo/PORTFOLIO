@@ -12,6 +12,7 @@
   --neo-pink: #ff6fae;
   --neo-bg: #f8f7f4;
   --neo-black: #000000;
+  --neo-accent: #2563eb;
   
   --primary: var(--neo-yellow);
   --primary-foreground: #000000;
@@ -27,6 +28,7 @@
   /* Neo Brutalist Dark Theme Colors */
   --neo-bg: #0d0d11;
   --neo-black: #ffffff;
+  --neo-accent: #60a5fa;
   
   --primary: var(--neo-yellow);
   --primary-foreground: #000000;
@@ -41,6 +43,7 @@
   --color-neo-pink: var(--neo-pink);
   --color-neo-bg: var(--neo-bg);
   --color-neo-black: var(--neo-black);
+  --color-neo-accent: var(--neo-accent);
   
   --color-background: var(--background);
   --color-foreground: var(--foreground);

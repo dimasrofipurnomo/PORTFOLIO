@@ -344,9 +344,9 @@ export default function AboutPage() {
 
       {/* Academic Journey Section */}
       <section className="px-4 space-y-8">
-        <div className="border-l-4 border-neo-yellow pl-4">
+        <div className="border-l-4 border-neo-accent pl-4">
           <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-foreground leading-none">
-            {t("journey.title")} <span className="text-neo-yellow">{t("journey.highlight")}</span>
+            {t("journey.title")} <span className="text-neo-accent">{t("journey.highlight")}</span>
           </h2>
         </div>
 
@@ -376,7 +376,7 @@ export default function AboutPage() {
                   {coursework.map((course) => (
                     <span 
                       key={course} 
-                      className="text-[10px] font-black tracking-wider uppercase bg-black text-neo-yellow px-2 py-0.5 border-2 border-foreground rounded-[4px] shadow-[2px_2px_0px_var(--neo-black)]"
+                      className="text-[10px] font-black tracking-wider uppercase bg-zinc-200 dark:bg-zinc-800 text-foreground px-2.5 py-1 rounded-[4px]"
                     >
                       {course}
                     </span>

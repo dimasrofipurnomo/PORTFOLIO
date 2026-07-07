@@ -13,7 +13,7 @@
     "hero": {
       "title": "Selamat Datang di",
       "portfolio": "Portofolio Saya",
-      "subtitle": "Portofolio ini menampilkan proyek, ide, dan pengalaman yang membentuk perjalanan saya sebagai system analyst, ui/ux design, dan software developer. Dari analisis kebutuhan dan pemodelan UML hingga sistem backend, teknologi cloud, dan produk yang berpusat pada pengguna, setiap proyek di sini mewakili proses pembelajaran berkelanjutan, kolaborasi, dan pemecahan masalah yang bermakna.",
+      "subtitle": "Portofolio ini menampilkan berbagai proyek, pengalaman, dan perjalanan belajar yang membentuk saya sebagai Analis Sistem, Desainer UI/UX, dan Pengembang Perangkat Lunak. Mulai dari menganalisis kebutuhan bisnis, merancang arsitektur sistem, menciptakan pengalaman pengguna yang intuitif, hingga mengembangkan aplikasi web dan mobile, setiap proyek mencerminkan semangat saya dalam menghadirkan solusi nyata melalui teknologi.",
       "explore": "Jelajahi Proyek",
       "cv": "Unduh CV",
       "connect": "Hubungi Saya"
@@ -26,35 +26,35 @@
     "find": {
       "title": "Apa Yang Anda Temukan",
       "highlight": "Temukan",
-      "desc": "Peta cepat yang menyoroti aspek-aspek utama dari portofolio profesional saya.",
+      "desc": "Sekilas gambaran mengenai bagian-bagian utama dalam portofolio saya.",
       "projects": {
         "title": "Proyek Kreatif",
-        "subtitle": "Aplikasi & sistem yang terealisasi",
-        "text": "Jelajahi proyek dinamis mulai dari aplikasi mobile Flutter/React hingga sistem IoT yang tangguh, lengkap dengan repositori kode sumber dan dokumentasi teknis.",
+        "subtitle": "Sistem & Solusi Digital",
+        "text": "Jelajahi berbagai proyek akademik dan pribadi yang mencakup analisis sistem, desain UI/UX, pengembangan web dan mobile. Setiap proyek menunjukkan proses analisis, perancangan, hingga implementasi solusi digital.",
         "cta": "Jelajahi proyek →"
       },
       "experience": {
         "title": "Pengalaman & Peran",
-        "subtitle": "Organisasi & Kepemimpinan",
-        "text": "Telusuri keanggotaan akademik saya, klub mahasiswa teknis, magang analis sistem, dan peran tim kolaboratif.",
-        "cta": "Lihat riwayat →"
+        "subtitle": "Organisasi & Kepanitiaan",
+        "text": "Lihat pengalaman saya dalam organisasi kemahasiswaan, kepanitiaan, dan berbagai peran kepemimpinan yang membangun kemampuan komunikasi, kolaborasi, koordinasi program kerja, serta pengelolaan organisasi.",
+        "cta": "Lihat Pengalaman →"
       },
       "about": {
         "title": "Tentang & Keahlian",
-        "subtitle": "Latar belakang & teknologi utama saya",
-        "text": "Pelajari prinsip rekayasa perangkat lunak saya, unduh CV saya secara langsung, atau isi formulir kontak untuk terhubung dengan saya.",
+        "subtitle": "Latar Belakang & Kompetensi",
+        "text": "Kenali lebih jauh perjalanan akademik, keahlian teknis, serta minat profesional saya di bidang Analisis Sistem, Desain UI/UX, dan Pengembangan Perangkat Lunak. Anda juga dapat mengunduh CV atau menghubungi saya untuk peluang kolaborasi.",
         "cta": "Pelajari lebih lanjut →"
       }
     },
     "featured": {
       "title": "Proyek Unggulan",
       "highlight": "Proyek",
-      "desc": "Pilihan proyek terbaik saya, dari sistem tanggap darurat hingga solusi agroteknologi.",
+      "desc": "Pilihan proyek yang menampilkan pengalaman saya dalam Analisis Sistem, Desain UI/UX, dan Pengembangan Perangkat Lunak",
       "all": "Lihat Semua Proyek",
       "view": "Lihat Detail"
     },
     "banner": {
-      "title": "Mari membangun sesuatu bersama.",
+      "title": "Mari membangun sesuatu bersama",
       "text": "Yuk terhubung, berbagi ide, membuat sesuatu yang keren, atau sekadar menyapa!",
       "cta": "Hubungi Saya",
       "cv": "Unduh CV"
@@ -264,12 +264,12 @@
         "text": "Tertarik dengan alur logika, struktur database, parameter yang digunakan, atau lisensi? Hubungi saya.",
         "contact": "Hubungi Saya"
       },
-      "other": "Operasi Lainnya"
+      "other": "Proyek Lainnya"
     }
   },
   "Organization": {
     "title": "Pengalaman Organisasi",
-    "subtitle": "Pengalaman yang membentuk keterampilan komunikasi, kepemimpinan, kolaborasi, dan koordinasi proyek saya melalui organisasi akademik dan komite.",
+    "subtitle": "Pengalaman berorganisasi yang membantu saya mengembangkan kemampuan komunikasi, koordinasi, kepemimpinan, dan kerja sama tim dalam mendukung berbagai kegiatan akademik dan kemahasiswaan.",
     "timeline": "Linimasa",
     "categories": {
       "comm": "KOMUNIKASI",
@@ -292,9 +292,8 @@
         "p1": "Koordinasi Tim",
         "p2": "Pengambilan Keputusan",
         "p3": "Pemecahan Masalah",
-        "p4": "Manajemen Konflik",
-        "p5": "Tanggung Jawab",
-        "p6": "Inisiatif"
+        "p4": "Tanggung Jawab",
+        "p5": "Inisiatif"
       },
       "pm": {
         "p1": "Penyelenggaraan Acara",
@@ -334,87 +333,92 @@
       "safe": {
         "title": "SAFE",
         "subtitle": "(SMART ACCIDENT & EMERGENCY)",
-        "description": "Platform tanggap darurat yang terintegrasi dengan peta dan pengiriman pesan cloud waktu nyata, untuk pelaporan kecelakaan yang cepat.",
+        "description": "Aplikasi mobile tanggap darurat dengan fitur SOS manual dan otomatis, deteksi kecelakaan otomatis, berbagi lokasi secara real-time, dan notifikasi darurat instan.",
         "subRole": "PENGEMBANG FULL-STACK MOBILE & ANALIS SISTEM",
-        "overview": "SAFE (Smart Accident & Emergency) adalah aplikasi mobile yang dirancang untuk mendukung respons darurat yang lebih cepat selama kecelakaan lalu lintas dan keadaan darurat medis. Sistem ini memanfaatkan sensor smartphone, notifikasi real-time, dan berbagi lokasi langsung untuk membantu pengguna memberi tahu kontak tepercaya secara otomatis dalam situasi kritis.\n\nAplikasi ini dikembangkan sebagai proyek akademik kolaboratif yang melibatkan aktivitas mobile, backend, dan analisis sistem. Dengan mengintegrasikan Firebase Cloud Messaging dan layanan Google Maps, SAFE memungkinkan pengguna untuk mengirim peringatan darurat yang disertai dengan informasi lokasi yang akurat, membantu meningkatkan aksesibilitas dan koordinasi selama peristiwa darurat.\n\nDalam proyek ini, saya bekerja sebagai Full-Stack Mobile Developer and System Analyst, berkontribusi dalam analisis kebutuhan, dokumentasi UML, pengembangan API backend menggunakan Golang Fiber, pengembangan mobile dengan Flutter, dan desain database menggunakan PostgreSQL. Saya berkolaborasi erat dengan tim sepanjang siklus hidup pengembangan perangkat lunak untuk memastikan bahwa implementasi teknis selaras dengan kebutuhan pengguna dan persyaratan sistem.",
+        "overview": "SAFE (Smart Accident & Emergency) merupakan aplikasi mobile yang dirancang untuk meningkatkan kecepatan respons dalam situasi darurat dengan memungkinkan pengguna mengirimkan sinyal SOS serta membagikan lokasi secara real-time kepada kontak terpercaya. Aplikasi ini mendukung pelaporan darurat secara manual maupun deteksi kecelakaan otomatis menggunakan sensor accelerometer dan gyroscope pada smartphone, sehingga informasi darurat dapat dikirimkan lebih cepat saat terjadi kondisi kritis.\n\nDikembangkan sebagai proyek akademik berbasis tim, SAFE mengintegrasikan aplikasi mobile, layanan backend, dan teknologi berbasis lokasi dalam satu platform. Sistem ini memanfaatkan Flutter sebagai framework pengembangan aplikasi mobile lintas platform, Golang untuk membangun RESTful API, Supabase (PostgreSQL) sebagai layanan basis data berbasis cloud, OpenStreetMap (OSM) untuk visualisasi peta dan pelacakan lokasi di dalam aplikasi, Google Maps untuk navigasi eksternal menuju lokasi darurat, serta Firebase Cloud Messaging untuk pengiriman notifikasi darurat secara real-time.\n\nDalam proyek ini, saya berperan sebagai Full-Stack Mobile Developer dan System Analyst dengan berkontribusi pada analisis kebutuhan sistem, pemodelan UML, perancangan basis data, pengembangan REST API, serta pengembangan aplikasi mobile menggunakan Flutter. Saya berfokus pada implementasi fitur notifikasi darurat menggunakan Firebase Cloud Messaging, pengembangan fitur riwayat SOS, serta integrasi pelacakan lokasi secara real-time untuk mendukung proses penanganan keadaan darurat secara lebih cepat dan andal.",
         "techStack": {
-          "Flutter": "Pengembangan mobile lintas platform.",
-          "Dart": "Logika aplikasi berperforma tinggi.",
-          "Golang": "Bahasa pemrograman utama untuk membangun API.",
-          "Fiber": "Framework web cepat untuk routing dan request.",
-          "REST API": "Desain web API untuk integrasi klien-server.",
-          "PostgreSQL": "Database produksi untuk menyimpan data aplikasi.",
-          "Firebase Cloud Messaging": "Notifikasi push waktu nyata untuk peringatan darurat.",
-          "Google Maps API": "Pelacakan lokasi langsung dan rendering peta.",
-          "Figma": "Desain UI/UX dan wireframing."
+          "Flutter": "Pengembangan aplikasi mobile lintas platform.",
+          "Dart": "Logika aplikasi, integrasi sensor, dan antarmuka pengguna.",
+          "Golang": "Pengembangan RESTful API dan logika bisnis backend.",
+          "Fiber": "Framework web ringan untuk membangun RESTful API.",
+          "REST API": "Komunikasi antara aplikasi mobile dan layanan backend.",
+          "Supabase": "Backend-as-a-Service dengan layanan PostgreSQL berbasis cloud.",
+          "PostgreSQL": "Basis data relasional untuk menyimpan data aplikasi.",
+          "Firebase Cloud Messaging": "Notifikasi darurat secara real-time kepada kontak terpercaya.",
+          "Google Maps": "Navigasi eksternal menuju lokasi darurat.",
+          "OpenStreetMap (OSM)": "Visualisasi peta dalam aplikasi dan pelacakan lokasi secara real-time.",
+          "Figma": "Perancangan UI/UX, wireframing, dan prototipe interaktif."
         }
       },
       "tempura": {
         "title": "TEMPURA",
         "subtitle": "(PEMANTAU FERMENTASI TEMPURA)",
-        "description": "Sistem pemantauan waktu nyata untuk proses fermentasi makanan menggunakan sensor ESP32 dan analitik mobile.",
-        "subRole": "ANALIS SISTEM & PENGEMBANG",
-        "overview": "TEMPURA adalah solusi berbasis IoT yang dirancang untuk memantau dan mengontrol suhu serta kelembaban selama proses fermentasi tempe. Sistem ini menggabungkan kontrol lingkungan otomatis dengan pencatatan data produksi untuk mendukung aktivitas fermentasi yang lebih konsisten dan efisien.\n\nProyek ini mengintegrasikan perangkat ESP32, aplikasi mobile, dan layanan backend untuk menyediakan pemantauan real-time dan visibilitas operasional. Dengan mendigitalisasi praktik fermentasi tradisional, TEMPURA mendorong adopsi teknologi dalam proses agroindustri lokal.\n\nSebagai System Analyst, saya bertanggung jawab atas rekayasa kebutuhan, analisis proses bisnis, dokumentasi UML, desain database, dan perencanaan arsitektur sistem untuk memastikan integrasi yang mulus antara perangkat IoT dan komponen perangkat lunak.",
+        "description": "Sistem berbasis IoT untuk memantau dan mengendalikan suhu serta kelembapan secara otomatis pada proses fermentasi tempe.",
+        "subRole": "ANALIS SISTEM",
+        "overview": "TEMPURA (Tempe Fermentation Monitoring System) merupakan sistem berbasis IoT yang dirancang untuk memantau dan mengendalikan suhu serta kelembapan secara otomatis selama proses fermentasi tempe. Dengan mengintegrasikan pemantauan lingkungan dan pencatatan data produksi, sistem ini membantu menjaga kondisi fermentasi tetap optimal sehingga menghasilkan proses produksi yang lebih konsisten dan efisien.\n\nDikembangkan sebagai proyek akademik berbasis tim, TEMPURA menggabungkan perangkat IoT, aplikasi mobile, dan layanan backend dalam satu platform monitoring. Sistem memanfaatkan ESP32 untuk membaca data sensor serta mengendalikan aktuator seperti pemanas, kipas, dan mist maker secara otomatis berdasarkan batas suhu dan kelembapan yang telah ditentukan. Seluruh data produksi disimpan pada basis data berbasis cloud sehingga kondisi fermentasi dan riwayat produksi dapat dipantau secara real-time.\n\nDalam proyek ini, saya berperan sebagai System Analyst dengan bertanggung jawab pada analisis kebutuhan sistem, pemodelan proses bisnis, dokumentasi UML, perancangan basis data, serta perancangan arsitektur sistem. Saya berkolaborasi dengan tim pengembang untuk memastikan integrasi antara perangkat IoT, layanan backend, dan aplikasi mobile berjalan dengan baik.",
         "techStack": {
-          "ESP32": "Mikrokontroler IoT untuk membaca sensor dan mengendalikan relay.",
-          "DHT22": "Sensor suhu dan kelembaban untuk pemantauan fermentasi.",
-          "Relay Module": "Sakelar aktuator untuk kontrol pemanas dan kipas otomatis.",
-          "Flutter": "Aplikasi pemantauan mobile lintas platform.",
-          "Dart": "Logika performa tinggi untuk pembaruan aplikasi mobile waktu nyata.",
-          "Golang": "Pengembangan layanan backend untuk ingesti data IoT.",
-          "PostgreSQL": "Database relasional untuk manajemen data produksi.",
-          "Figma": "Desain antarmuka pengguna dan pembuatan prototipe visual.",
-          "Draw-io": "Pemodelan sistem dan dokumentasi desain."
+          "ESP32": "Mikrokontroler IoT untuk membaca data sensor dan mengendalikan aktuator.",
+          "DHT22": "Sensor suhu dan kelembapan untuk memantau proses fermentasi.",
+          "Relay Module": "Mengontrol aktuator secara otomatis berdasarkan kondisi lingkungan.",
+          "Kipas DC": "Menurunkan suhu ketika suhu melebihi batas yang telah ditentukan.",
+          "Incandescent Bulb": "Sumber panas untuk mempertahankan suhu selama proses fermentasi.",
+          "Mist Maker": "Meningkatkan kelembapan secara otomatis saat berada di bawah batas yang ditentukan.",
+          "Flutter": "Pengembangan aplikasi mobile lintas platform untuk monitoring dan kontrol perangkat.",
+          "Dart": "Logika aplikasi dan antarmuka pengguna.",
+          "Golang": "Pengembangan RESTful API dan layanan backend untuk komunikasi IoT.",
+          "Supabase": "Backend-as-a-Service dengan layanan PostgreSQL berbasis cloud.",
+          "PostgreSQL": "Basis data relasional untuk menyimpan data sensor, produksi, dan status perangkat.",
+          "Figma": "Perancangan antarmuka pengguna dan prototipe interaktif.",
+          "Enterprise Architect": "Analisis sistem, pemodelan UML, dan dokumentasi arsitektur perangkat lunak."
         }
       },
       "kandang-digital": {
         "title": "KANDANG DIGITAL",
         "subtitle": "(ANTARMUKA KANDANG DIGITAL)",
-        "description": "Solusi agroteknologi komprehensif untuk melacak kesehatan ternak, inventaris, dan produktivitas pertanian.",
+        "description": "Aplikasi manajemen peternakan yang dirancang untuk memudahkan pencatatan keuangan, pengelolaan ternak, dan pemantauan kesehatan.",
         "subRole": "DESAINER UI/UX & ANALIS SISTEM",
-        "overview": "KandangDigital adalah aplikasi mobile yang dirancang untuk membantu peternak kambing dalam mengelola keuangan, inventaris hewan ternak, dan aktivitas pemantauan kesehatan melalui platform digital yang terintegrasi.\n\nAplikasi ini berfokus pada peningkatan efisiensi operasional dengan menyediakan alat untuk pencatatan keuangan, manajemen ternak, dan pelacakan kesehatan dalam satu sistem yang disesuaikan dengan aktivitas sehari-hari peternak.\n\nSebagai UI/UX Designer dan System Analyst, saya melakukan riset pengguna, mengembangkan persona dan peta perjalanan pengguna, merancang wireframe dan prototipe high-fidelity, serta melakukan pengujian kegunaan untuk memastikan solusi selaras dengan kebutuhan pengguna.",
+        "overview": "KandangDigital merupakan aplikasi mobile yang dirancang untuk membantu peternak kambing dalam mengelola operasional peternakan melalui platform digital yang terintegrasi. Aplikasi ini mendukung pencatatan keuangan, pengelolaan stok ternak, serta pemantauan kesehatan kambing sehingga aktivitas operasional dapat dilakukan secara lebih terstruktur dan efisien.\n\nDikembangkan sebagai proyek akademik berbasis tim, KandangDigital menerapkan pendekatan Design Thinking untuk memahami kebutuhan dan permasalahan yang dihadapi peternak kambing, kemudian menerjemahkannya menjadi solusi digital yang berorientasi pada pengguna. Melalui tahapan empathize, define, ideate, prototype, dan test, proyek ini menghasilkan rancangan antarmuka yang intuitif, mudah digunakan, dan sesuai dengan kebutuhan pengguna.\n\nDalam proyek ini, saya berperan sebagai UI/UX Designer dengan berkontribusi pada riset pengguna, wawancara stakeholder, penyusunan user persona, pemetaan user journey, perancangan task flow, wireframing, pembuatan high-fidelity prototype, serta usability testing. Saya berfokus pada perancangan fitur Autentikasi, Manajemen Keuangan, dan Pusat Bantuan (Help Center), sehingga setiap fitur dirancang sesuai dengan kebutuhan pengguna dan memberikan pengalaman penggunaan yang konsisten.",
         "techStack": {
-          "Figma": "Merancang prototipe interaktif high-fidelity dan mockup.",
-          "User Interviews": "Wawancara Pengguna — Mengumpulkan umpan balik dan wawasan langsung dari peternak kambing.",
-          "Affinity Diagram": "Diagram Afinitas — Mengelompokkan data riset dan mengidentifikasi masalah utama.",
-          "Persona Mapping": "Pemetaan Persona — Mendefinisikan karakteristik dan kebutuhan pengguna target.",
-          "Journey Mapping": "Pemetaan Perjalanan — Memetakan langkah-langkah pengguna selama aktivitas manajemen peternakan.",
-          "Usability Testing": "Usability Testing — Memvalidasi prototipe interaktif dengan pengguna nyata."
+          "Figma": "Merancang prototipe interaktif high-fidelity, wireframe, dan mockup antarmuka.",
+          "Maze": "Memvalidasi kemudahan penggunaan dan efektivitas rancangan bersama pengguna."
         }
       },
       "sipinjam": {
         "title": "SIPINJAM",
         "subtitle": "(SISTEM PEMINJAMAN SIPINJAM)",
-        "description": "Alat internal untuk mengelola peminjaman peralatan, melacak status inventaris, dan membuat laporan.",
+        "description": "Sistem informasi berbasis web untuk mengelola inventaris, peminjaman, pengembalian, dan pelacakan aset.",
         "subRole": "ANALIS SISTEM & PENGEMBANG WEB",
-        "overview": "SIPINJAM adalah sistem informasi berbasis web yang digabungkan dengan autentikasi, manajemen inventaris, modul peminjaman, dan fitur pelaporan untuk menyederhanakan proses administratif serta mendukung praktik manajemen aset yang lebih baik.\n\nDalam proyek ini, saya berkontribusi sebagai System Analyst dan Web Developer, berpartisipasi dalam analisis kebutuhan, desain database, pengembangan Laravel, implementasi autentikasi, dan pengujian sistem.",
-        "techStack": {
-          "HTML": "Struktur antarmuka inventaris berbasis web.",
-          "CSS": "Desain visual dan tata letak kustom.",
-          "JavaScript": "Fitur sisi klien interaktif dan halaman dinamis.",
-          "Bootstrap": "Framework CSS responsif untuk pembuatan gaya UI cepat.",
-          "Laravel": "Framework web full-stack dengan autentikasi bawaan dan ORM.",
-          "PHP": "Bahasa pemrograman sisi server yang menjalankan logika bisnis.",
-          "MySQL": "Database relasional untuk mengelola catatan pinjaman dan aset.",
-          "Git": "Sistem kontrol versi untuk melacak perubahan kode.",
-          "GitHub": "Platform kolaborasi dan repositori hosting kode.",
-          "Laragon": "Lingkungan pengembangan lokal untuk PHP dan MySQL."
+        "overview": "SIPINJAM (Inventory Loan Management System) merupakan sistem informasi berbasis web yang dikembangkan untuk mempermudah proses peminjaman inventaris dan pengelolaan aset dalam suatu organisasi. Sistem ini mendigitalisasi proses peminjaman yang sebelumnya dilakukan secara manual dengan menyediakan pengelolaan data inventaris, pengajuan peminjaman, pengembalian barang, serta pelaporan, sehingga meningkatkan efisiensi administrasi dan kemudahan pelacakan aset.\n\nDikembangkan sebagai proyek akademik berbasis tim, SIPINJAM dibangun menggunakan framework Laravel dengan basis data MySQL untuk menghasilkan aplikasi web yang aman dan responsif. Sistem ini mendukung autentikasi berbasis peran, pengelolaan inventaris, transaksi peminjaman dan pengembalian, serta fitur pelaporan untuk mempermudah pengelolaan inventaris sehari-hari.\n\nDalam proyek ini, saya berperan sebagai System Analyst dan Web Developer dengan berkontribusi pada analisis kebutuhan sistem, pemodelan proses bisnis, perancangan basis data, serta pengembangan aplikasi web menggunakan Laravel. Saya berfokus pada pengembangan fitur pengajuan peminjaman oleh mahasiswa, alur persetujuan peminjaman oleh admin, fitur lupa kata sandi, serta pengelolaan pengembalian inventaris untuk mendukung proses peminjaman yang lebih efisien dan terstruktur.",
+       "techStack": {
+          "HTML": "Membangun struktur antarmuka aplikasi web.",
+          "Tailwind CSS": "Framework CSS berbasis utility untuk membangun antarmuka yang responsif dan modern.",
+          "JavaScript": "Menambahkan fitur interaktif pada sisi klien.",
+          "AJAX": "Memungkinkan pertukaran data secara asynchronous tanpa memuat ulang halaman.",
+          "Laravel": "Framework PHP untuk pengembangan aplikasi web yang aman dan mudah dipelihara.",
+          "PHP": "Bahasa pemrograman sisi server untuk mengimplementasikan logika bisnis.",
+          "MySQL": "Basis data relasional untuk mengelola inventaris, transaksi peminjaman, pengguna, dan laporan.",
+          "Git": "Version control untuk pengelolaan kode sumber.",
+          "GitHub": "Repository kode dan kolaborasi tim.",
+          "Laragon": "Lingkungan pengembangan lokal untuk Laravel dan MySQL."
         }
       },
       "proapps": {
         "title": "PROAPPS",
-        "subtitle": "(INTI PEMANTAUAN PROAPPS)",
-        "description": "Merancang proses bisnis dan persyaratan teknis untuk sistem pemantauan program multi-departemen.",
+        "subtitle": "Mobile-Based Work Program Management Information System",
+        "description": "Sistem informasi manajemen program kerja berbasis mobile untuk mendukung perencanaan, monitoring, dan koordinasi organisasi.",
         "subRole": "ANALIS SISTEM",
-        "overview": "PROAPPS adalah sistem informasi berbasis mobile yang dirancang untuk mendukung manajemen program kerja, dokumentasi, dan koordinasi di dalam HIMATIF, Fakultas Ilmu Komputer, Universitas Jember. Aplikasi ini menerapkan akses berbasis peran untuk meningkatkan komunikasi dan efisiensi operasional di antara anggota organisasi.\n\nProyek ini memusatkan kegiatan organisasi ke dalam satu platform digital, memungkinkan manajemen program kerja, proses dokumentasi, dan penyebaran informasi yang lebih baik. Sistem ini dikembangkan secara kolaboratif menggunakan praktik Agile untuk menyelaraskan solusi teknis dengan kebutuhan pemangku kepentingan.\n\nDalam proyek ini, saya bertindak sebagai System Analyst, berkontribusi pada analisis pemangku kepentingan, pemodelan proses bisnis, dokumentasi UML, desain alur pengguna, dan spesifikasi kebutuhan fungsional.",
+        "overview": "PROAPPS (Program Kerja Management Information System) merupakan proyek analisis dan perancangan sistem untuk sistem informasi berbasis mobile yang mendukung pengelolaan program kerja di HIMATIF, Fakultas Ilmu Komputer, Universitas Jember. Proyek ini dilakukan untuk menganalisis proses bisnis organisasi serta menerjemahkan kebutuhan pemangku kepentingan ke dalam rancangan sistem yang terstruktur sebelum tahap implementasi.\n\nDikembangkan sebagai proyek akademik berbasis tim, PROAPPS berfokus pada penyusunan dokumentasi sistem secara komprehensif, meliputi pemodelan proses bisnis, analisis kebutuhan fungsional, dokumentasi UML, serta perancangan antarmuka pengguna. Proyek ini menerapkan pendekatan Agile untuk memastikan rancangan sistem sesuai dengan kebutuhan organisasi dan pengguna.\n\nDalam proyek ini, saya berperan sebagai System Analyst dengan bertanggung jawab pada analisis pemangku kepentingan, elisitasi kebutuhan, pemodelan proses bisnis, penyusunan dokumentasi UML, perancangan user flow, serta penyusunan Software Requirements Specification (SRS). Hasil akhir proyek berupa dokumen analisis dan rancangan sistem yang dapat dijadikan acuan pada tahap pengembangan aplikasi di masa mendatang.",
         "techStack": {
-          "Use Case Diagram": "Diagram Use Case — Memodelkan fungsionalitas sistem dan interaksi aktor.",
-          "Activity Diagram": "Diagram Aktivitas — Memetakan logika bisnis dan alur kerja.",
-          "Class Diagram": "Diagram Kelas — Merancang struktur database sistem statis.",
-          "Draw-io": "Pemodelan sistem visual dan diagramming.",
-          "Figma": "Pembuatan mockup UI dan desain alur pengguna.",
-          "Trello": "Manajemen proyek dan pelacakan tugas secara agile.",
-          "Agile Scrum": "Metodologi pengembangan perangkat lunak untuk kolaborasi berulang."
+          "Use Case Diagram": "Memodelkan kebutuhan fungsional dan interaksi antara aktor dengan sistem.",
+          "Activity Diagram": "Menggambarkan alur proses bisnis dan aktivitas sistem.",
+          "Class Diagram": "Merancang struktur statis sistem dan hubungan antar kelas.",
+          "Sequence Diagram": "Memodelkan interaksi antar objek dalam menjalankan suatu proses.",
+          "Communication Diagram": "Menggambarkan komunikasi dan pertukaran pesan antar objek dalam sistem.",
+          "Object Diagram": "Merepresentasikan objek beserta hubungan antar objek pada kondisi tertentu.",
+          "Entity Relationship Diagram (ERD)": "Merancang struktur basis data dan hubungan antar entitas.",
+          "Draw-io": "Pemodelan proses bisnis dan pembuatan diagram sistem.",
+          "Enterprise Architect": "Pemodelan UML dan dokumentasi arsitektur sistem.",
+          "Trello": "Manajemen proyek dan pelacakan tugas menggunakan Agile Scrum."
         }
       }
     },
@@ -467,6 +471,24 @@
         "period": "Nov 2025 - Des 2025",
         "description": "Mendukung komunikasi, kegiatan promosi, dan keterlibatan peserta untuk memupuk hubungan yang lebih kuat di antara anggota HIMATIF selama program malam keakraban tahunan."
       }
+    }
+  },
+  "Metadata": {
+    "home": {
+      "title": "Dimas Rofi' Purnomo | Portofolio",
+      "description": "Portofolio profesional Dimas Rofi' Purnomo - System Analyst, UI/UX Designer, dan Software Developer yang menampilkan proyek dan pengalaman kerja."
+    },
+    "about": {
+      "title": "Tentang Saya | Dimas Rofi'",
+      "description": "Pelajari lebih lanjut tentang latar belakang Dimas Rofi' Purnomo, pendidikan, keahlian teknis utama, hard skills, dan soft skills."
+    },
+    "projects": {
+      "title": "Portofolio Proyek | Dimas Rofi'",
+      "description": "Jelajahi proyek kreatif yang direalisasikan oleh Dimas Rofi' Purnomo, mulai dari aplikasi mobile, sistem IoT, hingga aplikasi web."
+    },
+    "organization": {
+      "title": "Pengalaman Organisasi | Dimas Rofi'",
+      "description": "Telusuri pengalaman Dimas Rofi' Purnomo dalam organisasi kemahasiswaan, peran kepemimpinan, dan kepanitiaan akademik."
     }
   }
 }

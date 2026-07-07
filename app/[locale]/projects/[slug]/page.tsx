@@ -48,13 +48,38 @@ export default function ProjectDetailPage({ params }: PageProps) {
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   const [showcaseIndex, setShowcaseIndex] = useState(0);
 
-  // Filter out the current project to find other/related projects sharing at least one category
-  const relatedProjectsRaw = projects
-    .filter((p) => p.slug !== slug && p.category.some((cat) => project.category.includes(cat)))
-    .slice(0, 3);
-  const relatedProjects = relatedProjectsRaw.length > 0
-    ? relatedProjectsRaw
-    : projects.filter((p) => p.slug !== slug).slice(0, 3);
+  // Find other projects and sort them so those sharing a category come first
+  const allOtherProjects = React.useMemo(() => {
+    const related = projects.filter((p) => p.slug !== slug && p.category.some((cat) => project.category.includes(cat)));
+    const unrelated = projects.filter((p) => p.slug !== slug && !p.category.some((cat) => project.category.includes(cat)));
+    return [...related, ...unrelated];
+  }, [slug, project.category]);
+
+  const [otherProjectIndex, setOtherProjectIndex] = useState(0);
+
+  // Get up to 3 projects starting from otherProjectIndex (with wrapping)
+  const visibleProjects = React.useMemo(() => {
+    if (allOtherProjects.length <= 3) {
+      return allOtherProjects;
+    }
+    const result = [];
+    for (let i = 0; i < 3; i++) {
+      const idx = (otherProjectIndex + i) % allOtherProjects.length;
+      result.push(allOtherProjects[idx]);
+    }
+    return result;
+  }, [allOtherProjects, otherProjectIndex]);
+
+  const nextOtherProjects = () => {
+    setOtherProjectIndex((prev) => (prev + 1) % allOtherProjects.length);
+  };
+
+  const prevOtherProjects = () => {
+    setOtherProjectIndex((prev) => 
+      prev === 0 ? allOtherProjects.length - 1 : prev - 1
+    );
+  };
+
 
   // Handlers for Showcase Gallery Carousel
   const nextShowcase = () => {
@@ -80,10 +105,10 @@ export default function ProjectDetailPage({ params }: PageProps) {
 
             
             <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-foreground leading-tight">
-              {project.title} <br />
-              {project.subtitle && (
+              {tDb.has("title") ? tDb("title") : project.title} <br />
+              {(tDb.has("subtitle") ? tDb("subtitle") : project.subtitle) && (
                 <span className="text-neo-blue text-2xl md:text-3xl font-black normal-case block mt-1">
-                  {project.subtitle}
+                  {tDb.has("subtitle") ? tDb("subtitle") : project.subtitle}
                 </span>
               )}
             </h1>
@@ -288,16 +313,41 @@ export default function ProjectDetailPage({ params }: PageProps) {
 
 
       {/* 6. Related Projects Section */}
-      {relatedProjects.length > 0 && (
+      {visibleProjects.length > 0 && (
         <section className="px-4 space-y-8">
           <div className="border-b-4 border-foreground pb-2 max-w-max">
             <h3 className="text-2xl font-black uppercase text-foreground">{t("other")}</h3>
           </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {relatedProjects.map((p) => (
+            {visibleProjects.map((p) => (
               <ProjectCard key={p.slug} project={p} />
             ))}
           </div>
+
+          {allOtherProjects.length > 3 && (
+            <div className="flex justify-center items-center gap-4 pt-2">
+              <button 
+                onClick={prevOtherProjects}
+                className="w-10 h-10 flex items-center justify-center bg-white dark:bg-zinc-800 text-foreground border-4 border-foreground rounded-[8px] shadow-[4px_4px_0px_var(--neo-black)] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[5px_5px_0px_var(--neo-black)] active:translate-x-0 active:translate-y-0 active:shadow-none transition-all duration-100 cursor-pointer"
+                aria-label={activeLang === "id" ? "Proyek Sebelumnya" : "Previous Project"}
+              >
+                <ChevronLeft className="w-5 h-5 stroke-[2.5px]" />
+              </button>
+              
+              <span className="text-xs font-black uppercase tracking-widest text-foreground/60 select-none">
+                {otherProjectIndex + 1} / {allOtherProjects.length}
+              </span>
+
+              <button 
+                onClick={nextOtherProjects}
+                className="w-10 h-10 flex items-center justify-center bg-white dark:bg-zinc-800 text-foreground border-4 border-foreground rounded-[8px] shadow-[4px_4px_0px_var(--neo-black)] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[5px_5px_0px_var(--neo-black)] active:translate-x-0 active:translate-y-0 active:shadow-none transition-all duration-100 cursor-pointer"
+                aria-label={activeLang === "id" ? "Proyek Selanjutnya" : "Next Project"}
+              >
+                <ChevronRight className="w-5 h-5 stroke-[2.5px]" />
+              </button>
+            </div>
+          )}
         </section>
       )}
 

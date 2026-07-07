@@ -6,7 +6,7 @@ import { MobileHeader, MobileNav } from "@/components/layout/MobileNav";
 import { Footer } from "@/components/layout/Footer";
 import { BackToTop } from "@/components/BackToTop";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import "../globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -19,10 +19,51 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Dimas Rofi' | Portfolio",
-  description: "Professional portfolio showcasing projects, ideas, and experiences.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
+  const t = await getTranslations({ locale, namespace: "Metadata.home" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    metadataBase: new URL("https://dimasrofi-portfolio.vercel.app"),
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        en: "/en",
+        id: "/id",
+      },
+    },
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: `https://dimasrofi-portfolio.vercel.app/${locale}`,
+      siteName: "Dimas Rofi' Purnomo",
+      images: [
+        {
+          url: "/dimas_profile.png",
+          width: 1200,
+          height: 630,
+          alt: "Dimas Rofi' Purnomo",
+        },
+      ],
+      locale: locale === "id" ? "id_ID" : "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: ["/dimas_profile.png"],
+    },
+  };
+}
+
 
 interface RootLayoutProps {
   children: React.ReactNode;

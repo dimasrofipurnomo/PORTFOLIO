@@ -13,7 +13,7 @@
     "hero": {
       "title": "Welcome to My",
       "portfolio": "Portfolio",
-      "subtitle": "This portfolio showcases the projects, ideas, and experiences that shaped my journey as a system analyst, ui/ux design, and software developer. From requirements analysis and UML modeling to backend systems, cloud technologies, and user-centered products, every project here represents continuous learning, collaboration, and meaningful problem solving.",
+      "subtitle": "This portfolio showcases the projects, experiences, and learning journey that have shaped me as a System Analyst, UI/UX Designer, and Software Developer. From analyzing business requirements and designing system architectures to creating intuitive user experiences and developing web and mobile applications, each project reflects my passion for solving real-world problems through technology.",
       "explore": "Explore Projects",
       "cv": "Download CV",
       "connect": "Let's Connect"
@@ -21,35 +21,35 @@
     "find": {
       "title": "What You'll Find",
       "highlight": "Find",
-      "desc": "A quick map highlighting the core aspects of my professional portfolio.",
+      "desc": "A quick overview of the key sections in my portfolio.",
       "projects": {
         "title": "Creative Projects",
-        "subtitle": "Realized applications & systems",
-        "text": "Explore dynamic projects ranging from Flutter/React mobile apps to robust IoT systems, complete with source code repositories and technical write-ups.",
+        "subtitle": "Systems & Digital Solutions",
+        "text": "Explore academic and personal projects spanning system analysis, UI/UX design, web and mobile development. Each project highlights my problem-solving approach, technical documentation, and implementation process.",
         "cta": "Browse projects →"
       },
       "experience": {
         "title": "Experience & Roles",
-        "subtitle": "Organizations & Leadership",
-        "text": "Browse through my academic memberships, technical student clubs, system analyst internships, and collaborative team roles.",
-        "cta": "View history →"
+        "subtitle": "Organizations & Committees",
+        "text": "Discover my experiences in student organizations, committees, and leadership roles that have strengthened my communication, collaboration, work program coordination, and organizational skills.",
+        "cta": "View Experience →"
       },
       "about": {
         "title": "About & Skills",
-        "subtitle": "My background & core stacks",
-        "text": "Learn about my software engineering principles, download my CV directly, or fill out the contact form to connect with me.",
+        "subtitle": "Background & Expertise",
+        "text": "Learn more about my academic journey, technical expertise, and professional interests in System Analysis, UI/UX Design, and Software Development. You can also download my CV or get in touch for collaboration opportunities.",
         "cta": "Learn more →"
       }
     },
     "featured": {
       "title": "Featured Projects",
       "highlight": "Projects",
-      "desc": "A curated selection of my most impactful work, from emergency response systems to agrotech solutions.",
+      "desc": "A selection of projects that showcase my experience in System Analysis, UI/UX Design, and Software Development",
       "all": "View All Projects",
       "view": "View Details"
     },
     "banner": {
-      "title": "Let's build something together.",
+      "title": "Let's build something together",
       "text": "Let's connect, share ideas, build something awesome, or simply say hello!",
       "cta": "Contact Me",
       "cv": "Download CV"
@@ -233,12 +233,12 @@
       "forged": "Forged With",
       "showcase": "System Showcase",
       "screenshotOf": "Screenshot {current} of {total}",
-      "other": "Other Operations"
+      "other": "Other Projects"
     }
   },
   "Organization": {
     "title": "Organization Experience",
-    "subtitle": "Experiences that shaped my communication, leadership, collaboration, and project coordination skills through academic organizations and committees.",
+    "subtitle": "Organizational experiences that helped me develop communication, coordination, leadership, and teamwork skills while contributing to various academic and student activities.",
     "timeline": "Timeline",
     "pr": "PUBLIC RELATIONS",
     "coordinator": "COORDINATOR",
@@ -262,9 +262,8 @@
         "p1": "Team Coordination",
         "p2": "Decision Making",
         "p3": "Problem Solving",
-        "p4": "Conflict Management",
-        "p5": "Responsibility",
-        "p6": "Initiative"
+        "p4": "Responsibility",
+        "p5": "Initiative"
       },
       "pm": {
         "p1": "Event Organizing",
@@ -298,7 +297,7 @@
       "safe": {
         "title": "SAFE",
         "subtitle": "Smart Accident & Emergency",
-        "description": "An emergency response platform integrated with maps and real-time cloud messaging, for rapid accident reporting.",
+        "description": "A mobile emergency response application featuring manual and automatic SOS, automatic accident detection, real-time location sharing, and instant emergency notifications.",
         "subRole": "FULL-STACK MOBILE DEVELOPER & SYSTEM ANALYST",
         "background": "Rapid growth of vehicle usage has caused an increase in road accidents. Delays in emergency service responses can lead to higher fatality rates.",
         "problem": "Accident victims or witnesses often struggle to report coordinates accurately, causing delayed emergency response dispatch.",
@@ -315,8 +314,8 @@
       "tempura": {
         "title": "TEMPURA",
         "subtitle": "Smart Tempe Fermentation Monitoring System",
-        "description": "Real-time monitoring system for food fermentation processes using ESP32 sensors and mobile analytics.",
-        "subRole": "SYSTEM ANALYST & DEVELOPER",
+        "description": "An IoT-based system for monitoring and automatically controlling temperature and humidity during the tempe fermentation process.",
+        "subRole": "SYSTEM ANALYST",
         "background": "Traditional food fermentation relies heavily on manual inspections, which are prone to batch inconsistencies.",
         "problem": "Temperature and humidity fluctuations during fermentation can ruin batches without timely interventions.",
         "solution": "An ESP32-based hardware monitor linked to a Postgres database, showing real-time metrics on a mobile dashboard.",
@@ -342,7 +341,7 @@
       "kandang-digital": {
         "title": "KANDANG DIGITAL",
         "subtitle": "(KANDANG DIGITAL INTERFACE)",
-        "description": "Comprehensive agrotech solution for tracking livestock health, inventory, and farm productivity.",
+        "description": "A livestock management application designed to simplify financial recording, livestock inventory, and health monitoring.",
         "subRole": "UI/UX DESIGNER & SYSTEM ANALYST",
         "background": "Modern livestock farming faces difficulties in tracking animal histories, vaccination records, and overall farm yields.",
         "problem": "Farmers typically rely on offline logbooks, leading to lost history data and delayed vet consultations.",
@@ -369,7 +368,7 @@
       "sipinjam": {
         "title": "SIPINJAM",
         "subtitle": "(SIPINJAM LOAN SYSTEM)",
-        "description": "Internal tool for managing equipment loans, tracking inventory status, and generating reports.",
+        "description": "A web-based inventory and equipment loan management system that streamlines borrowing, returns, and asset tracking.",
         "subRole": "SYSTEM ANALYST & WEB DEVELOPER",
         "background": "Universities often face issues keeping track of high-value laboratory equipment, leading to lost items or scheduling overlaps.",
         "problem": "Manual paper logbooks make it difficult to audit who has borrowed what equipment, causing delays in return reporting.",
@@ -396,7 +395,7 @@
       "proapps": {
         "title": "PROAPPS",
         "subtitle": "(PROAPPS MONITORING CORE)",
-        "description": "Architecting the business process and technical requirements for a multi-department program monitoring system.",
+        "description": "A mobile-based work program management information system designed to support planning, monitoring, and organizational coordination.",
         "subRole": "SYSTEM ANALYST",
         "background": "Government agencies run multiple social programs simultaneously, but monitoring progress across silos is highly challenging.",
         "problem": "Departments submit physical forms in varying formats, making it impossible to evaluate overall performance in real-time.",
@@ -491,5 +490,24 @@
       "team": "Built trust, delegated workloads, and resolved structural blockers.",
       "doc": "Organized project specifications, minutes of meetings, and archives."
     }
+  },
+  "Metadata": {
+    "home": {
+      "title": "Dimas Rofi' Purnomo | Portfolio",
+      "description": "Professional portfolio of Dimas Rofi' Purnomo - System Analyst, UI/UX Designer, and Software Developer showcasing projects and experiences."
+    },
+    "about": {
+      "title": "About Me | Dimas Rofi'",
+      "description": "Learn more about Dimas Rofi' Purnomo's background, education, core tech stack, hard and soft skills."
+    },
+    "projects": {
+      "title": "Projects Portfolio | Dimas Rofi'",
+      "description": "Explore creative projects realized by Dimas Rofi' Purnomo, spanning mobile apps, IoT systems, and web applications."
+    },
+    "organization": {
+      "title": "Organization & Leadership | Dimas Rofi'",
+      "description": "Browse Dimas Rofi' Purnomo's experience in student organizations, leadership roles, and academic committees."
+    }
   }
 }
+

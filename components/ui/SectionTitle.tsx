@@ -21,9 +21,9 @@ export function SectionTitle({
   ...props
 }: SectionTitleProps) {
   const colorStyles = {
-    yellow: "text-neo-yellow",
-    blue: "text-neo-blue",
-    pink: "text-neo-pink",
+    yellow: "text-neo-accent",
+    blue: "text-neo-accent",
+    pink: "text-neo-accent",
   };
 
   // Render title with dynamic highlighting if a word is specified
