@@ -121,25 +121,17 @@ export default function ProjectDetailPage({ params }: PageProps) {
 
           </div>
 
-          {/* Duration & Team Size Neo Brutalist boxes */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {project.duration && (
-              <div className="p-4 bg-white dark:bg-zinc-900 neo-border rounded-[8px] shadow-[4px_4px_0px_var(--neo-black)] font-sans">
-                <div className="text-[10px] font-black tracking-wider uppercase text-foreground/50">{t("duration")}</div>
-                <div className="text-sm font-black uppercase text-foreground mt-1">{project.duration}</div>
+          {/* Team Size Neo Brutalist box */}
+          {project.teamSize && (
+            <div className="p-4 bg-white dark:bg-zinc-900 neo-border rounded-[8px] shadow-[4px_4px_0px_var(--neo-black)] font-sans max-w-xs">
+              <div className="text-[10px] font-black tracking-wider uppercase text-foreground/50">{t("teamSize")}</div>
+              <div className="text-sm font-black uppercase text-foreground mt-1">
+                {project.teamSize.includes("MEMBERS") 
+                  ? (activeLang === "id" ? project.teamSize.replace("MEMBERS", "ANGGOTA") : project.teamSize)
+                  : project.teamSize}
               </div>
-            )}
-            {project.teamSize && (
-              <div className="p-4 bg-white dark:bg-zinc-900 neo-border rounded-[8px] shadow-[4px_4px_0px_var(--neo-black)] font-sans">
-                <div className="text-[10px] font-black tracking-wider uppercase text-foreground/50">{t("teamSize")}</div>
-                <div className="text-sm font-black uppercase text-foreground mt-1">
-                  {project.teamSize.includes("MEMBERS") 
-                    ? (activeLang === "id" ? project.teamSize.replace("MEMBERS", "ANGGOTA") : project.teamSize)
-                    : project.teamSize}
-                </div>
-              </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
 
         {/* Right Graphic Banner */}

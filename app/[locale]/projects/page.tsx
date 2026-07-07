@@ -137,9 +137,6 @@ export default function ProjectsPage() {
                   .map((project) => (
                     <div key={project.slug} className="p-4 bg-white dark:bg-zinc-900 neo-border rounded-[8px] shadow-[4px_4px_0px_var(--neo-black)]">
                       <h4 className="font-black text-sm uppercase text-foreground">{project.title}</h4>
-                      <p className="text-xs font-bold text-foreground/60 uppercase tracking-wide">
-                        {project.duration}
-                      </p>
                     </div>
                   ))}
               </div>
@@ -162,9 +159,6 @@ export default function ProjectsPage() {
                       <h4 className="font-black text-sm uppercase text-foreground">
                         {project.title}
                       </h4>
-                      <p className="text-xs font-bold uppercase tracking-wide text-foreground/60">
-                        {project.duration}
-                      </p>
                     </div>
                   ))}
               </div>

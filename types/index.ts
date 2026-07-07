@@ -19,7 +19,6 @@ export interface Project {
   year: number;
   timelineLabel: string;
   subtitle: string;
-  duration: string;
   teamSize: string;
   overview: string; // Narrative overview for detail pages
   techStackDetailed: {

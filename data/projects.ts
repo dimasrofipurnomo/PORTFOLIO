@@ -27,8 +27,6 @@ export const projects: Project[] = [
 
     subtitle: "Smart Accident & Emergency",
 
-    duration: "MAR 2026 - JUN 2026",
-
     teamSize: "4 MEMBERS",
 
     overview: `
@@ -107,8 +105,6 @@ As a Full-Stack Mobile Developer and System Analyst, I contributed to requiremen
     timelineLabel: "Smart Agriculture",
 
     subtitle: "Tempe Fermentation Monitoring System",
-
-    duration: "MAR 2026 - JUN 2026",
 
     teamSize: "4 MEMBERS",
 
@@ -196,8 +192,6 @@ As a System Analyst, I was responsible for requirements analysis, business proce
 
     subtitle: "Inventory Loan Management System",
 
-    duration: "NOV 2025 - DEC 2025",
-
     teamSize: "3 MEMBERS",
 
     overview: `
@@ -274,8 +268,6 @@ As a System Analyst and Web Developer, I contributed to requirements analysis, b
 
     subtitle: "Mobile-Based Work Program Management Information System",
 
-    duration: "MAR - JUN 2026",
-
     teamSize: "3 MEMBERS",
 
     overview: `
@@ -341,8 +333,6 @@ As a System Analyst, I was responsible for stakeholder analysis, requirements el
     timelineLabel: "Livestock Management",
 
     subtitle: "Goat Farm Management Application",
-
-    duration: "NOV 2025 - DEC 2025",
 
     teamSize: "3 MEMBERS",
 
