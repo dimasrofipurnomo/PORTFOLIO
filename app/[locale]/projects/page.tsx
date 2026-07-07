@@ -111,62 +111,6 @@ export default function ProjectsPage() {
         )}
       </section>
 
-      {/* 3. Project Timeline Section */}
-      <AnimateIn>
-        <section className="px-4 space-y-8">
-          <div className="border-l-4 border-foreground pl-4">
-            <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight text-foreground leading-none">
-              {t("timeline.title")}
-            </h2>
-          </div>
-
-          {/* Timeline representation exactly as styled in Figma mockup */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
-            
-            {/* Vertical divider line on mobile, horizontal on desktop */}
-            <div className="hidden md:block absolute top-[40px] left-[20%] right-[20%] h-1 bg-foreground z-0" />
-
-            {/* Year: 2025 */}
-            <div className="space-y-4 relative z-10">
-              <div className="bg-neo-pink text-black font-black text-xl px-6 py-2.5 neo-border shadow-[4px_4px_0px_var(--neo-black)] rounded-[8px] inline-block uppercase select-none">
-                2025
-              </div>
-                            <div className="space-y-3 pt-2">
-                {projects
-                  .filter((p) => p.year === 2025)
-                  .map((project) => (
-                    <div key={project.slug} className="p-4 bg-white dark:bg-zinc-900 neo-border rounded-[8px] shadow-[4px_4px_0px_var(--neo-black)]">
-                      <h4 className="font-black text-sm uppercase text-foreground">{project.title}</h4>
-                    </div>
-                  ))}
-              </div>
-            </div>
-
-            {/* Year: 2026 */}
-            <div className="space-y-4 relative z-10">
-              <div className="bg-neo-blue text-white font-black text-xl px-6 py-2.5 neo-border shadow-[4px_4px_0px_var(--neo-black)] rounded-[8px] inline-block uppercase select-none">
-                2026
-              </div>
-              
-              <div className="space-y-3 pt-2">
-                {projects
-                  .filter((p) => p.year === 2026)
-                  .map((project) => (
-                    <div 
-                      key={project.slug} 
-                      className="p-4 neo-border rounded-[8px] shadow-[4px_4px_0px_var(--neo-black)] bg-white dark:bg-zinc-900 text-foreground"
-                    >
-                      <h4 className="font-black text-sm uppercase text-foreground">
-                        {project.title}
-                      </h4>
-                    </div>
-                  ))}
-              </div>
-            </div>
-
-          </div>
-        </section>
-      </AnimateIn>
 
       {/* 4. What I Learned Section */}
       <section className="px-4 space-y-8">
