@@ -8,7 +8,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         {/* Left Side */}
         <div className="text-center md:text-left space-y-1">
-          <div className="font-black text-lg tracking-tight">Dimas Rofi&apos;</div>
+          <div className="font-black text-lg tracking-tight">Portfolio</div>
           <p className="text-xs text-foreground/75 font-semibold">
             &copy; 2026 Dimas Rofi&apos; Purnomo.
           </p>

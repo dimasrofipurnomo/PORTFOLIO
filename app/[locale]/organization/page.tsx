@@ -212,7 +212,7 @@ export default function OrganizationPage() {
                             <span className="text-[10px] font-black uppercase tracking-wider text-foreground/50">
                               {orgName}
                             </span>
-                            <span className="text-[10px] font-black uppercase tracking-wider bg-black text-neo-yellow px-1.5 py-0.5 rounded-[4px] border border-zinc-700">
+                            <span className="text-[10px] font-black uppercase tracking-wider bg-zinc-200 dark:bg-zinc-800 text-foreground px-1.5 py-0.5 rounded-[4px] border border-foreground/20">
                               {orgPeriod}
                             </span>
                           </div>

@@ -40,7 +40,7 @@ export default function ProjectsPage() {
     return [];
   };
 
-  const filters = ["All", "System Analyst", "UI/UX", "Web", "Mobile", "IoT"];
+  const filters = ["All", "System Analyst", "UI/UX", "Web", "Mobile"];
 
   // Filter projects
   const filteredProjects = projects.filter((project) => {

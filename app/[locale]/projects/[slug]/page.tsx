@@ -153,7 +153,7 @@ export default function ProjectDetailPage({ params }: PageProps) {
                   src={project.imageUrl}
                   alt={tDb("title")}
                   fill
-                  className="object-cover transition-transform duration-200 group-hover:scale-102"
+                  className="object-contain p-4 transition-transform duration-200 group-hover:scale-102"
                 />
               )}
               {/* Overlay maximize icon */}
@@ -260,13 +260,16 @@ export default function ProjectDetailPage({ params }: PageProps) {
           <div className="max-w-2xl mx-auto bg-white dark:bg-zinc-900 border-4 border-foreground rounded-[8px] p-6 shadow-[6px_6px_0px_var(--neo-black)] relative">
             <div 
               onClick={() => setLightboxImage(project.gallery![showcaseIndex])}
-              className="relative w-full aspect-video neo-border rounded-[8px] overflow-hidden cursor-pointer group flex items-center justify-center"
+              className={cn(
+                "relative w-full aspect-video neo-border rounded-[8px] overflow-hidden cursor-pointer group flex items-center justify-center",
+                project.imageBg || "bg-zinc-100 dark:bg-zinc-800"
+              )}
             >
               <Image
                 src={project.gallery[showcaseIndex]}
                 alt={`Showcase ${showcaseIndex + 1}`}
                 fill
-                className="object-cover group-hover:scale-102 transition-transform"
+                className="object-contain p-4 group-hover:scale-102 transition-transform"
               />
               <div className="absolute inset-0 bg-black/35 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <div className="bg-white text-black p-2 rounded-full neo-border shadow-[2px_2px_0px_rgba(0,0,0,1)]">

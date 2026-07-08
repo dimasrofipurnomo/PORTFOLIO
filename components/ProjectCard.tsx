@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Project } from "@/types";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
+import { cn } from "@/lib/utils";
 
 
 export interface ProjectCardProps {
@@ -22,7 +23,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
       
       {/* 1. Top Neo Brutalist Graphic Header */}
       <div 
-        className="relative w-full h-[200px] border-b-4 border-foreground overflow-hidden select-none bg-zinc-100 dark:bg-zinc-800"
+        className={cn(
+          "relative w-full h-[200px] border-b-4 border-foreground overflow-hidden select-none flex items-center justify-center p-2",
+          project.imageBg || "bg-zinc-100 dark:bg-zinc-800"
+        )}
       >
         {project.imageUrl && (
           <Image
@@ -30,7 +34,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             alt={project.title}
             fill
             sizes="(max-w-768px) 100vw, 33vw"
-            className="object-cover"
+            className="object-contain p-2"
           />
         )}
       </div>

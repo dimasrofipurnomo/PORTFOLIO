@@ -15,11 +15,11 @@ export const projects: Project[] = [
 
     featured: true,
 
-    subRole: "FULL-STACK MOBILE DEVELOPER & SYSTEM ANALYST",
+    subRole: "UI/UX DESIGN & MOBILE DEVELOPER",
 
-    imageBg: "bg-neo-blue",
+    imageBg: "bg-[#df1c1c]",
 
-    category: ["Mobile", "System Analyst"],
+    category: ["UI/UX", "Mobile"],
 
     year: 2026,
 
@@ -30,11 +30,11 @@ export const projects: Project[] = [
     teamSize: "4 MEMBERS",
 
     overview: `
-SAFE (Smart Accident & Emergency) is a mobile application designed to improve emergency response by enabling users to quickly send SOS alerts and share their real-time location with trusted contacts. The application supports both manual emergency reporting and automatic accident detection using the smartphone's accelerometer and gyroscope sensors, allowing critical emergency information to be delivered more quickly during urgent situations.
+SAFE (Smart Accident & Emergency) is a mobile application designed to support emergency response by enabling users to send SOS alerts and share their real-time location with trusted contacts. The application supports both manual emergency reporting and automatic accident detection using the smartphone's accelerometer and gyroscope sensors, allowing critical emergency information to be delivered more quickly during emergency situations.
 
-Developed as an academic team project, SAFE integrates mobile technology, backend services, and location-based features into a unified platform. The system utilizes Flutter for cross-platform mobile development, Golang for RESTful API development, Supabase (PostgreSQL) for cloud-based database management, OpenStreetMap (OSM) for in-app map visualization and real-time location tracking, Google Maps for external navigation, and Firebase Cloud Messaging for instant emergency notifications.
+Developed as an academic team project, SAFE integrates mobile applications, backend services, and location-based technologies into a unified platform. The system utilizes Flutter for cross-platform mobile development, Golang for RESTful API development, Supabase (PostgreSQL) for cloud-based database management, OpenStreetMap (OSM) for in-app map visualization and real-time location tracking, Google Maps for external navigation, and Firebase Cloud Messaging (FCM) for real-time emergency notifications.
 
-As a Full-Stack Mobile Developer and System Analyst, I contributed to requirements analysis, UML modeling, database design, REST API development, and Flutter mobile application development. My primary responsibilities included implementing the emergency notification feature using Firebase Cloud Messaging, developing the SOS history feature, and integrating real-time location tracking to support faster and more reliable emergency response.`,
+I contributed to designing the user experience and developing the application's core features, ranging from RESTful API development to mobile application implementation using Flutter, Golang, and Supabase. My contributions included implementing emergency notifications, SOS history, and real-time location tracking to support a more effective emergency response process.`,
 
     techStackDetailed: [
       {
@@ -96,9 +96,9 @@ As a Full-Stack Mobile Developer and System Analyst, I contributed to requiremen
 
     subRole: "SYSTEM ANALYST",
 
-    imageBg: "bg-neo-pink",
+    imageBg: "bg-[#f8f8f8] dark:bg-[#18181c]",
 
-    category: ["IoT", "System Analyst"],
+    category: ["System Analyst"],
 
     year: 2026,
 
@@ -182,7 +182,7 @@ As a System Analyst, I was responsible for requirements analysis, business proce
 
     subRole: "SYSTEM ANALYST & WEB DEVELOPER",
 
-    imageBg: "bg-neo-blue",
+    imageBg: "bg-[#ffffff] dark:bg-[#18181c]",
 
     category: ["Web", "System Analyst"],
 
@@ -235,9 +235,13 @@ As a System Analyst and Web Developer, I contributed to requirements analysis, b
 
     gallery: [
       "/project/sipinjam/sipinjam-landingpage.png",
+      "/project/sipinjam/sipinjam-tentang.png",
       "/project/sipinjam/sipinjam-login.png",
       "/project/sipinjam/sipinjam-admin-dashboard.png",
       "/project/sipinjam/sipinjam-admin-inventaris.png",
+      "/project/sipinjam/sipinjam-admin-crud-inventaris.png",
+      "/project/sipinjam/sipinjam-mahasiswa-dashboard.png",
+      "/project/sipinjam/sipinjam-form-peminjaman.png",
     ],
   },
 
@@ -258,7 +262,7 @@ As a System Analyst and Web Developer, I contributed to requirements analysis, b
 
     subRole: "SYSTEM ANALYST",
 
-    imageBg: "bg-zinc-800",
+    imageBg: "bg-[#0a1628]",
 
     category: ["System Analyst"],
 
@@ -304,6 +308,11 @@ As a System Analyst, I was responsible for stakeholder analysis, requirements el
     gallery: [
       "/project/proapps/proapps.png",
       "/project/proapps/proapps-1.png",
+      "/project/proapps/proapps-2.png",
+      "/project/proapps/proapps-3.png",
+      "/project/proapps/proapps-4.png",
+      "/project/proapps/proapps-5.png",
+      "/project/proapps/proapps-6.png",
     ],
   },
 
@@ -322,11 +331,11 @@ As a System Analyst, I was responsible for stakeholder analysis, requirements el
 
     featured: true,
 
-    subRole: "UI/UX DESIGNER & SYSTEM ANALYST",
+    subRole: "UI/UX DESIGNER",
 
-    imageBg: "bg-neo-yellow",
+    imageBg: "bg-[#ffffff] dark:bg-[#18181c]",
 
-    category: ["UI/UX", "System Analyst"],
+    category: ["UI/UX"],
 
     year: 2025,
 
@@ -364,6 +373,7 @@ As a UI/UX Designer, I contributed to user research, stakeholder interviews, per
       "/project/kandangDigital/kandangDigital-1.png",
       "/project/kandangDigital/kandangDigital-2.png",
       "/project/kandangDigital/kandangDigital-3.png",
+      "/project/kandangDigital/kandangDigital-4.png",
     ],
   },
 ];

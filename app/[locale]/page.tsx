@@ -41,9 +41,6 @@ export default function Home() {
             <Link href="/projects">
               <Button variant="blue">{t("hero.explore")}</Button>
             </Link>
-            <a href="https://drive.google.com/file/d/14PS57CnoJvSwkc-ZeUBM_Qv7FVA3x5xm/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-              <Button variant="yellow">{t("hero.cv")}</Button>
-            </a>
             <Link href="/about#contact">
               <Button variant="white">{t("hero.connect")}</Button>
             </Link>
@@ -150,9 +147,6 @@ export default function Home() {
               <Link href="/about#contact">
                 <Button variant="yellow">{t("banner.cta")}</Button>
               </Link> 
-              <a href="https://drive.google.com/file/d/14PS57CnoJvSwkc-ZeUBM_Qv7FVA3x5xm/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                <Button variant="white">{t("banner.cv")}</Button>
-              </a>
             </div>
           </div>
         </section>

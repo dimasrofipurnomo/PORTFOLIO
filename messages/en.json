@@ -15,7 +15,6 @@
       "portfolio": "Portfolio",
       "subtitle": "This portfolio showcases the projects, experiences, and learning journey that have shaped me as a System Analyst, UI/UX Designer, and Software Developer. From analyzing business requirements and designing system architectures to creating intuitive user experiences and developing web and mobile applications, each project reflects my passion for solving real-world problems through technology.",
       "explore": "Explore Projects",
-      "cv": "Download CV",
       "connect": "Let's Connect"
     },
     "find": {
@@ -37,7 +36,7 @@
       "about": {
         "title": "About & Skills",
         "subtitle": "Background & Expertise",
-        "text": "Learn more about my academic journey, technical expertise, and professional interests in System Analysis, UI/UX Design, and Software Development. You can also download my CV or get in touch for collaboration opportunities.",
+        "text": "Learn more about my academic journey, technical expertise, and professional interests in System Analysis, UI/UX Design, and Software Development. You can also get in touch for collaboration opportunities.",
         "cta": "Learn more →"
       }
     },
@@ -51,8 +50,7 @@
     "banner": {
       "title": "Let's build something together",
       "text": "Let's connect, share ideas, build something awesome, or simply say hello!",
-      "cta": "Contact Me",
-      "cv": "Download CV"
+      "cta": "Contact Me"
     }
   },
   "About": {
@@ -60,8 +58,7 @@
       "title": "System Analyst",
       "subtitle1": "UI/UX Designer",
       "subtitle2": "Software Developer",
-      "text": "I am Dimas Rofi' Purnomo, an Information Technology student at the Faculty of Computer Science, University of Jember, with interests in System Analysis, UI/UX Design, and Software Development. Experienced in translating business requirements into functional system designs, creating UML documentation, designing user-centered interfaces, and developing web and mobile applications through academic projects. Actively involved in student organizations while continuously improving my technical and collaborative skills to build meaningful digital solutions.",
-      "cv": "Download CV"
+      "text": "I am Dimas Rofi' Purnomo, an Information Technology student at the Faculty of Computer Science, University of Jember, with interests in System Analysis, UI/UX Design, and Software Development. Experienced in translating business requirements into functional system designs, creating UML documentation, designing user-centered interfaces, and developing web and mobile applications through academic projects. Actively involved in student organizations while continuously improving my technical and collaborative skills to build meaningful digital solutions."
     },
     "expertise": {
     "title": "Hard Skills",
@@ -153,8 +150,7 @@
       "text": "Let's connect, share ideas, build something awesome, or simply say hello!",
       "github": "GitHub",
       "linkedin": "LinkedIn",
-      "email": "Email",
-      "cv": "CV"
+      "email": "Email"
     }
   },
   "Projects": {
@@ -298,7 +294,7 @@
         "title": "SAFE",
         "subtitle": "Smart Accident & Emergency",
         "description": "A mobile emergency response application featuring manual and automatic SOS, automatic accident detection, real-time location sharing, and instant emergency notifications.",
-        "subRole": "FULL-STACK MOBILE DEVELOPER & SYSTEM ANALYST",
+        "subRole": "UI/UX DESIGN & MOBILE DEVELOPER",
         "background": "Rapid growth of vehicle usage has caused an increase in road accidents. Delays in emergency service responses can lead to higher fatality rates.",
         "problem": "Accident victims or witnesses often struggle to report coordinates accurately, causing delayed emergency response dispatch.",
         "solution": "A mobile application integrating real-time maps and automated location tracking with cloud notification relays.",
@@ -313,7 +309,7 @@
       },
       "tempura": {
         "title": "TEMPURA",
-        "subtitle": "Smart Tempe Fermentation Monitoring System",
+        "subtitle": "Tempe Fermentation Monitoring System",
         "description": "An IoT-based system for monitoring and automatically controlling temperature and humidity during the tempe fermentation process.",
         "subRole": "SYSTEM ANALYST",
         "background": "Traditional food fermentation relies heavily on manual inspections, which are prone to batch inconsistencies.",
@@ -340,9 +336,9 @@
       },
       "kandang-digital": {
         "title": "KANDANG DIGITAL",
-        "subtitle": "(KANDANG DIGITAL INTERFACE)",
+        "subtitle": "Goat Farm Management Application",
         "description": "A livestock management application designed to simplify financial recording, livestock inventory, and health monitoring.",
-        "subRole": "UI/UX DESIGNER & SYSTEM ANALYST",
+        "subRole": "UI/UX DESIGNER",
         "background": "Modern livestock farming faces difficulties in tracking animal histories, vaccination records, and overall farm yields.",
         "problem": "Farmers typically rely on offline logbooks, leading to lost history data and delayed vet consultations.",
         "solution": "A mobile application UI design featuring simple dashboard tracking, vaccination timeline logs, and vet advice portals.",
@@ -367,7 +363,7 @@
       },
       "sipinjam": {
         "title": "SIPINJAM",
-        "subtitle": "(SIPINJAM LOAN SYSTEM)",
+        "subtitle": "Inventory Loan Management System",
         "description": "A web-based inventory and equipment loan management system that streamlines borrowing, returns, and asset tracking.",
         "subRole": "SYSTEM ANALYST & WEB DEVELOPER",
         "background": "Universities often face issues keeping track of high-value laboratory equipment, leading to lost items or scheduling overlaps.",
@@ -394,7 +390,7 @@
       },
       "proapps": {
         "title": "PROAPPS",
-        "subtitle": "(PROAPPS MONITORING CORE)",
+        "subtitle": "Mobile-Based Work Program Management Information System",
         "description": "A mobile-based work program management information system designed to support planning, monitoring, and organizational coordination.",
         "subRole": "SYSTEM ANALYST",
         "background": "Government agencies run multiple social programs simultaneously, but monitoring progress across silos is highly challenging.",
@@ -502,7 +498,7 @@
     },
     "projects": {
       "title": "Projects Portfolio | Dimas Rofi'",
-      "description": "Explore creative projects realized by Dimas Rofi' Purnomo, spanning mobile apps, IoT systems, and web applications."
+      "description": "Explore creative projects realized by Dimas Rofi' Purnomo, spanning mobile apps and web applications."
     },
     "organization": {
       "title": "Organization & Leadership | Dimas Rofi'",

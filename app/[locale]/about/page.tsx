@@ -12,9 +12,7 @@ import {
   Users, 
   Brain, 
   Calendar, 
-  Zap, 
   GraduationCap,
-  Download,
   Github,
   Linkedin,
   Mail
@@ -183,12 +181,6 @@ export default function AboutPage() {
             </p>
             
             <div className="flex flex-wrap items-center gap-3 pt-2">
-              <a href="https://drive.google.com/file/d/14PS57CnoJvSwkc-ZeUBM_Qv7FVA3x5xm/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="block">
-                <Button variant="yellow" className="flex items-center gap-2">
-                  <Download className="w-4 h-4 stroke-[2.5px]" />
-                  {t("hero.cv")}
-                </Button>
-              </a>
               <Link 
                 href="https://github.com/dimasrofipurnomo" 
                 target="_blank" 
@@ -262,8 +254,6 @@ export default function AboutPage() {
       <AnimateIn>
         <section className="px-4 max-w-5xl mx-auto w-full">
           <div className="relative overflow-hidden rounded-[8px] bg-white dark:bg-zinc-900 text-foreground border-4 border-foreground shadow-[6px_6px_0px_var(--neo-black)] p-6 md:p-8 font-sans">
-            <Zap className="absolute right-6 bottom-6 md:right-12 md:top-1/2 md:-translate-y-1/2 w-24 h-24 md:w-32 md:h-32 text-foreground opacity-5 pointer-events-none stroke-[2px]" />
-
             <div className="relative z-10 space-y-6">
               <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-foreground border-b-2 border-foreground/10 pb-3 flex items-center justify-between">
                 <span>{t("soft.title")}</span>
@@ -363,7 +353,7 @@ export default function AboutPage() {
                 <CardDescription className="text-foreground/80 text-sm font-bold">
                   {t("journey.edu.school")}
                 </CardDescription>
-                <p className="text-xs font-black uppercase tracking-widest text-neo-yellow bg-black inline-block px-2.5 py-1 rounded-[4px] self-start border-2 border-foreground shadow-[2px_2px_0px_var(--neo-black)]">
+                <p className="text-xs font-black uppercase tracking-widest text-foreground bg-white dark:bg-zinc-900 inline-block px-2.5 py-1 rounded-[4px] self-start border-2 border-foreground shadow-[2px_2px_0px_var(--neo-black)]">
                   {t("journey.edu.gpa")}
                 </p>
               </CardHeader>
@@ -416,12 +406,6 @@ export default function AboutPage() {
                 <Button variant="yellow" className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
                   {t("connect.email")}
-                </Button>
-              </a>
-              <a href="https://drive.google.com/file/d/14PS57CnoJvSwkc-ZeUBM_Qv7FVA3x5xm/view?usp=sharing" className="block">
-                <Button variant="pink" className="flex items-center gap-2">
-                  <Download className="w-4 h-4" />
-                  {t("connect.cv")}
                 </Button>
               </a>
             </div>
