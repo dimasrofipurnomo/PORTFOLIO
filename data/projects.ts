@@ -176,7 +176,7 @@ As a System Analyst, I was responsible for requirements analysis, business proce
     description:
       "Web-based inventory loan management system for asset tracking and reporting.",
 
-    imageUrl: "/project/sipinjam/sipinjam-landingpage.png",
+    imageUrl: "/project/sipinjam/sipinjam.png",
 
     featured: false,
 
@@ -234,14 +234,14 @@ As a System Analyst and Web Developer, I contributed to requirements analysis, b
     ],
 
     gallery: [
-      "/project/sipinjam/sipinjam-landingpage.png",
-      "/project/sipinjam/sipinjam-tentang.png",
-      "/project/sipinjam/sipinjam-login.png",
+      "/project/sipinjam/sipinjam.png",
+      "/project/sipinjam/sipinjam-fitur.png",
       "/project/sipinjam/sipinjam-admin-dashboard.png",
       "/project/sipinjam/sipinjam-admin-inventaris.png",
-      "/project/sipinjam/sipinjam-admin-crud-inventaris.png",
+      "/project/sipinjam/sipinjam-admin-peminjaman.png",
       "/project/sipinjam/sipinjam-mahasiswa-dashboard.png",
-      "/project/sipinjam/sipinjam-form-peminjaman.png",
+      "/project/sipinjam/sipinjam-mahasiswa-katalog.png",
+      "/project/sipinjam/sipinjam-mahasiswa-riwayat.png",
     ],
   },
 
