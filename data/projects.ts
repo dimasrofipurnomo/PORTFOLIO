@@ -96,7 +96,7 @@ I contributed to designing the user experience and developing the application's 
 
     subRole: "SYSTEM ANALYST",
 
-    imageBg: "bg-[#f8f8f8] dark:bg-[#18181c]",
+    imageBg: "bg-[#f8f8f8]",
 
     category: ["System Analyst"],
 
@@ -182,7 +182,7 @@ As a System Analyst, I was responsible for requirements analysis, business proce
 
     subRole: "SYSTEM ANALYST & WEB DEVELOPER",
 
-    imageBg: "bg-[#ffffff] dark:bg-[#18181c]",
+    imageBg: "bg-[#ffffff]",
 
     category: ["Web", "System Analyst"],
 
@@ -333,7 +333,7 @@ As a System Analyst, I was responsible for stakeholder analysis, requirements el
 
     subRole: "UI/UX DESIGNER",
 
-    imageBg: "bg-[#ffffff] dark:bg-[#18181c]",
+    imageBg: "bg-[#ffffff]",
 
     category: ["UI/UX"],
 
