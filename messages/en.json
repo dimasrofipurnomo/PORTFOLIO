@@ -294,127 +294,37 @@
       "safe": {
         "title": "SAFE",
         "subtitle": "Smart Accident & Emergency",
-        "description": "A mobile emergency response application featuring manual and automatic SOS, automatic accident detection, real-time location sharing, and instant emergency notifications.",
+        "description": "Mobile emergency response application integrating accident detection, real-time notifications, and live location sharing.",
         "subRole": "UI/UX DESIGN & MOBILE DEVELOPER",
-        "background": "Rapid growth of vehicle usage has caused an increase in road accidents. Delays in emergency service responses can lead to higher fatality rates.",
-        "problem": "Accident victims or witnesses often struggle to report coordinates accurately, causing delayed emergency response dispatch.",
-        "solution": "A mobile application integrating real-time maps and automated location tracking with cloud notification relays.",
-        "impact": "Reduces response times by 35% through coordinate-based routing and automatic nearest hospital detection.",
-        "contributions": ["DATABASE DESIGN", "REALTIME NOTIFICATIONS", "MOBILE PROTOTYPE", "REST API DEVELOPMENT", "UML MODELING", "TESTING & DEBUGGING"],
-        "lessonsLearned": {
-          "technical": "Learned to manage background location tracking services in Flutter and optimize spatial queries in database layers.",
-          "analysis": "Successfully mapped complex business workflows of paramedic dispatching into simple UML state charts.",
-          "softSkills": "Emphasized the importance of continuous testing feedback and communication in multi-disciplinary team environments.",
-          "challenges": "Faced issues with notification delays, resolved by implementing automated retry queues."
-        }
+        "overview": "Problem\nDuring emergency situations, victims may be unable to manually contact trusted people or share their location, resulting in delayed assistance.\n\nGoal\nDevelop a mobile application that supports emergency response through manual SOS, automatic accident detection, and real-time location sharing.\n\nSolution\nSAFE integrates smartphone sensors, location services, RESTful APIs, and push notifications into a cross-platform mobile application that helps users quickly notify trusted emergency contacts.\n\nDevelopment Process\nThe project began with identifying user requirements and designing the user experience. The system was implemented using Flutter for the mobile application, Golang for RESTful APIs, Supabase (PostgreSQL) for cloud database services, and OpenStreetMap for in-app location visualization. Black Box Testing was conducted to validate the application's core functionalities.\n\nMy Contributions\nDesigned high-fidelity prototypes. Developed RESTful APIs and mobile application features, including emergency notifications, SOS history, and real-time location tracking.\n\nImpact\nProvides users with a faster and more reliable way to send emergency alerts and share their location with trusted contacts.\n\nTechnologies & Tools\n"
       },
       "tempura": {
         "title": "TEMPURA",
         "subtitle": "Tempe Fermentation Monitoring System",
-        "description": "An IoT-based system for monitoring and automatically controlling temperature and humidity during the tempe fermentation process.",
+        "description": "IoT-based monitoring system for controlling temperature and humidity during tempe fermentation.",
         "subRole": "SYSTEM ANALYST",
-        "background": "Traditional food fermentation relies heavily on manual inspections, which are prone to batch inconsistencies.",
-        "problem": "Temperature and humidity fluctuations during fermentation can ruin batches without timely interventions.",
-        "solution": "An ESP32-based hardware monitor linked to a Postgres database, showing real-time metrics on a mobile dashboard.",
-        "impact": "Eliminated batch wastage completely by alerting developers within seconds of temperature anomalies.",
-        "contributions": ["FIRMWARE DEVELOPMENT", "HARDWARE WIRING", "DATABASE LOGGING", "DASHBOARD DESIGN"],
-        "blueprints": ["Hardware Schema", "Database Relational Model"],
-        "journey": [
-          {"title": "Sensors Calibration", "desc": "Testing DHT22 sensors, calibrating readings, and setting up energy-efficient sleep cycles on ESP32."},
-          {"title": "Endpoint Integration", "desc": "Deploying lightweight HTTP logging endpoints and streaming JSON telemetry data from the sensors."}
-        ],
-        "responsibilities": [
-          "Wrote micro-controller C++ firmware for reading sensor values.",
-          "Configured deep sleep modes to expand the hardware's battery life.",
-          "Developed a mobile app interface for tracking logs in realtime."
-        ],
-        "lessonsLearned": {
-          "technical": "Mastered power saving modes in ESP32 and learned telemetry data structures.",
-          "analysis": "Fleshed out clear physical requirements of IoT node boxes.",
-          "softSkills": "Improved division of labor and integration alignment checks in micro teams.",
-          "challenges": "Sensor fluctuations due to condensation resolved using custom waterproof packaging."
-        }
-      },
-      "kandang-digital": {
-        "title": "KANDANG DIGITAL",
-        "subtitle": "Goat Farm Management Application",
-        "description": "A livestock management application designed to simplify financial recording, livestock inventory, and health monitoring.",
-        "subRole": "UI/UX DESIGNER",
-        "background": "Modern livestock farming faces difficulties in tracking animal histories, vaccination records, and overall farm yields.",
-        "problem": "Farmers typically rely on offline logbooks, leading to lost history data and delayed vet consultations.",
-        "solution": "A mobile application UI design featuring simple dashboard tracking, vaccination timeline logs, and vet advice portals.",
-        "impact": "Improves data logging efficiency for farmers and eases remote veterinary monitoring.",
-        "contributions": ["USER INTERVIEWS", "WIREFRAME FLOWS", "HIGH-FIDELITY PROTOTYPES", "USABILITY SURVEYS"],
-        "blueprints": ["User Flows", "High-Fi Visual System"],
-        "journey": [
-          {"title": "User Interviews", "desc": "Visiting local dairy farms to understand typical workflows, farmer pain points, and terminology."},
-          {"title": "Visual Theme System", "desc": "Designing modern, bright badges, livestock icons, and high-readability layouts in Figma."}
-        ],
-        "responsibilities": [
-          "Conducted onsite user interviews and created user persona profiles.",
-          "Designed wireframes and interactive high-fidelity prototypes in Figma.",
-          "Ran system usability testing (SUS) to evaluate navigation efficiency."
-        ],
-        "lessonsLearned": {
-          "technical": "Learned advanced auto-layout constraints and component variants in Figma.",
-          "analysis": "Mapped unstructured farmer feedback into concrete feature requirements.",
-          "softSkills": "Honed empathy in user research and learned to accept design feedback constructively.",
-          "challenges": "Low tech-literacy of target users resolved by simplifying icons and layout paths."
-        }
+        "overview": "Problem\nTraditional tempe fermentation relies on manual monitoring of temperature and humidity, making the process inconsistent and prone to production failure.\n\nGoal\nDesign an IoT-based monitoring and automatic control system to maintain optimal fermentation conditions.\n\nSolution\nTEMPURA combines IoT devices, backend services, and a mobile application to monitor environmental conditions, record production data, and automatically control temperature and humidity.\n\nDevelopment Process\nThe project started with requirements engineering and business process analysis. System documentation was produced, including System Request (SR), Software Requirements Specification (SRS), user stories, functional and non-functional requirements, communication interface specifications, flowcharts, and database design. The system architecture was designed to integrate ESP32 devices, backend services, and the mobile application.\n\nMy Contributions\nLed the requirements engineering process, prepared system documentation, designed the system architecture, and defined database structures to support IoT integration.\n\nImpact\nProvides a structured system design that supports efficient monitoring, automated environmental control, and future implementation.\n\nTechnologies & Tools\n"
       },
       "sipinjam": {
         "title": "SIPINJAM",
         "subtitle": "Inventory Loan Management System",
-        "description": "A web-based inventory and equipment loan management system that streamlines borrowing, returns, and asset tracking.",
+        "description": "Web-based inventory loan management system for asset tracking and reporting.",
         "subRole": "SYSTEM ANALYST & WEB DEVELOPER",
-        "background": "Universities often face issues keeping track of high-value laboratory equipment, leading to lost items or scheduling overlaps.",
-        "problem": "Manual paper logbooks make it difficult to audit who has borrowed what equipment, causing delays in return reporting.",
-        "solution": "A web dashboard built with Laravel and MySQL featuring QR code generation and automated email alerts for overdue returns.",
-        "impact": "Decreased tool losses to 0% and reduced administrative overhead by 60% over a one-semester trial.",
-        "contributions": ["FRONTEND DEVELOPMENT", "DATABASE STRUCTURING", "QR SCANNER INTEGRATION", "TESTING & VALIDATION"],
-        "blueprints": ["Database Schema", "UI Site Map Flow"],
-        "journey": [
-          {"title": "Stakeholder Interviews", "desc": "Analyzing requirements with lab administrators to map the loan approval and return workflows."},
-          {"title": "MVC Core Implementation", "desc": "Fleshing out the Laravel models, controller routing logic, and MySQL database index constraints."}
-        ],
-        "responsibilities": [
-          "Configured relational model associations and migrations in MySQL database.",
-          "Developed dynamic dashboard views using Blade templates.",
-          "Integrated email notifications using Laravel Mailables."
-        ],
-        "lessonsLearned": {
-          "technical": "Gained deep understanding of Laravel's ORM relationships and transaction lockouts.",
-          "analysis": "Understood how to translate administrative workflows into modular role permissions.",
-          "softSkills": "Practiced collaborative code reviews and managing pull requests on GitHub.",
-          "challenges": "Faced layout alignment issues on old admin monitors, resolved with flexbox custom styling."
-        }
+        "overview": "Problem\nManual inventory borrowing processes make it difficult to track loan requests, approvals, and asset returns efficiently.\n\nGoal\nDevelop a web-based inventory management system that simplifies borrowing workflows and improves inventory administration.\n\nSolution\nA Laravel-based web application implementing the MVC architecture to manage inventory data, borrowing requests, administrator approvals, and return processes.\n\nDevelopment Process\nThe project began with business process analysis and user requirements analysis. A relational database structure and MVC architecture were designed before implementing the application using Laravel. Black Box Testing was conducted to validate system functionality.\n\nMy Contributions\nAnalyzed business requirements, designed the MVC application architecture and relational database, developed borrowing, approval, return, and password recovery features, and performed Black Box Testing.\n\nImpact\nDigitized the inventory borrowing process, improving efficiency, data accuracy, and inventory tracking.\n\nTechnologies & Tools\n"
       },
       "proapps": {
         "title": "PROAPPS",
         "subtitle": "Mobile-Based Work Program Management Information System",
-        "description": "A mobile-based work program management information system designed to support planning, monitoring, and organizational coordination.",
+        "description": "Mobile-based information system supporting work program management and organizational coordination.",
         "subRole": "SYSTEM ANALYST",
-        "background": "Government agencies run multiple social programs simultaneously, but monitoring progress across silos is highly challenging.",
-        "problem": "Departments submit physical forms in varying formats, making it impossible to evaluate overall performance in real-time.",
-        "solution": "A unified software specification and process architecture defining standard data formats, API models, and UML flows.",
-        "impact": "Provided an approved system model blueprint ready for development, cutting specification time in half.",
-        "contributions": ["SYSTEM ARCHITECTURE DESIGN", "BUSINESS PROCESS RE-ENGINEERING", "SRS DOCUMENTATION"],
-        "blueprints": ["BPMN Diagram", "UML Class Model"],
-        "journey": [
-          {"title": "Requirement Engineering", "desc": "Holding focus groups with department heads to map organizational workflows and identify functional gaps."},
-          {"title": "UML Modeling", "desc": "Drawing use cases, activity sequences, and relational structures using drawing design tools."}
-        ],
-        "responsibilities": [
-          "Conducted requirements elicitation workshops and drafted the formal Software Requirements Specification (SRS).",
-          "Designed all UML diagrams including use case, activity, and class definitions.",
-          "Constructed process wireframes modeling form inputs across all departments."
-        ],
-        "lessonsLearned": {
-          "technical": "Mastered UML notation guidelines and system architecture standard designs.",
-          "analysis": "Successfully separated functional requirements from operational constraints.",
-          "softSkills": "Honed presentation skills to translate complex designs to non-technical stakeholders.",
-          "challenges": "Resolving conflicting requirements between departments by drafting dynamic data objects."
-        }
+        "overview": "Problem\nManaging organizational work programs through manual documentation and scattered communication often leads to miscommunication, inefficient coordination, and poor documentation.\n\nGoal\nDesign a structured mobile-based information system to support work program management within the student organization.\n\nSolution\nA complete system analysis and design document that defines business processes, functional requirements, user roles, and system interactions before implementation.\n\nDevelopment Process\nThe project began with stakeholder analysis and business process analysis to identify organizational needs. A System Request document was prepared, followed by UML modeling consisting of Use Case, Activity, Class, Sequence, Communication, State, and Object Diagrams using an Agile approach.\n\nMy Contributions\nConducted stakeholder analysis, business process analysis, requirements analysis, prepared the System Request document, and developed comprehensive UML documentation.\n\nImpact\nProvides a structured system design that serves as a foundation for future application development and improves communication among project stakeholders.\n\nTechnologies & Tools\n"
+      },
+      "kandang-digital": {
+        "title": "KANDANG DIGITAL",
+        "subtitle": "Goat Farm Management Application",
+        "description": "Mobile application for managing goat farm finances, inventory, and health monitoring.",
+        "subRole": "UI/UX DESIGNER",
+        "overview": "Problem\nGoat farmers often manage financial records, livestock data, and health monitoring manually, making information difficult to organize and access.\n\nGoal\nDesign a user-friendly mobile application that simplifies daily farm management activities.\n\nSolution\nA mobile application prototype designed using the Design Thinking methodology to improve usability and support efficient farm management.\n\nDevelopment Process\nThe project followed the Design Thinking process, including user research, stakeholder interviews, information architecture, user flow, task flow, wireframing, high-fidelity prototyping, and usability testing using Maze.\n\nMy Contributions\nConducted user research, designed information architecture, user flows, wireframes, and interactive prototypes, and refined the Authentication, Financial Management, and Help Center features based on usability testing results.\n\nImpact\nProvides a more intuitive user experience that helps farmers manage farm operations more efficiently.\n\nTechnologies & Tools\n"
       }
     },
     "organizations": {

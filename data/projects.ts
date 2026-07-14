@@ -30,11 +30,32 @@ export const projects: Project[] = [
     teamSize: "4 MEMBERS",
 
     overview: `
-SAFE (Smart Accident & Emergency) is a mobile application designed to support emergency response by enabling users to send SOS alerts and share their real-time location with trusted contacts. The application supports both manual emergency reporting and automatic accident detection using the smartphone's accelerometer and gyroscope sensors, allowing critical emergency information to be delivered more quickly during emergency situations.
+Problem
 
-Developed as an academic team project, SAFE integrates mobile applications, backend services, and location-based technologies into a unified platform. The system utilizes Flutter for cross-platform mobile development, Golang for RESTful API development, Supabase (PostgreSQL) for cloud-based database management, OpenStreetMap (OSM) for in-app map visualization and real-time location tracking, Google Maps for external navigation, and Firebase Cloud Messaging (FCM) for real-time emergency notifications.
+During emergency situations, victims may be unable to manually contact trusted people or share their location, resulting in delayed assistance.
 
-I contributed to designing the user experience and developing the application's core features, ranging from RESTful API development to mobile application implementation using Flutter, Golang, and Supabase. My contributions included implementing emergency notifications, SOS history, and real-time location tracking to support a more effective emergency response process.`,
+Goal
+
+Develop a mobile application that supports emergency response through manual SOS, automatic accident detection, and real-time location sharing.
+
+Solution
+
+SAFE integrates smartphone sensors, location services, RESTful APIs, and push notifications into a cross-platform mobile application that helps users quickly notify trusted emergency contacts.
+
+Development Process
+
+The project began with identifying user requirements and designing the user experience. The system was implemented using Flutter for the mobile application, Golang (Fiber) for RESTful APIs, Supabase (PostgreSQL) for cloud database services, and OpenStreetMap for in-app location visualization. Black Box Testing was conducted to validate the application's core functionalities.
+
+My Contributions
+
+Designed high-fidelity prototypes. Developed RESTful APIs and mobile application features, including emergency notifications, SOS history, and real-time location tracking.
+
+Impact
+
+Provides users with a faster and more reliable way to send emergency alerts and share their location with trusted contacts.
+
+Technologies & Tools
+Flutter, Dart, Golang, Supabase, PostgreSQL, Firebase Cloud Messaging, OpenStreetMap, Figma.`,
 
     techStackDetailed: [
       {
@@ -109,12 +130,32 @@ I contributed to designing the user experience and developing the application's 
     teamSize: "4 MEMBERS",
 
     overview: `
-TEMPURA (Tempe Fermentation Monitoring System) is an IoT-based system designed to monitor and automatically control temperature and humidity throughout the tempe fermentation process. By integrating environmental monitoring with production data recording, the system helps maintain optimal fermentation conditions while improving consistency and operational efficiency.
+Problem
 
-Developed as an academic team project, TEMPURA combines IoT devices, mobile applications, and backend services into a unified monitoring platform. The system utilizes ESP32 to collect sensor data and automatically control actuators such as heaters, fans, and mist makers based on predefined environmental thresholds. Production data is stored in a cloud database, allowing users to monitor fermentation conditions and production history in real time.
+Traditional tempe fermentation relies on manual monitoring of temperature and humidity, making the process inconsistent and prone to production failure.
 
-As a System Analyst, I was responsible for requirements analysis, business process modeling, UML documentation, database design, and system architecture planning. I worked closely with the development team to ensure seamless integration between IoT devices, backend services, and the mobile application.
-    `,
+Goal
+
+Design an IoT-based monitoring and automatic control system to maintain optimal fermentation conditions.
+
+Solution
+
+TEMPURA combines IoT devices, backend services, and a mobile application to monitor environmental conditions, record production data, and automatically control temperature and humidity.
+
+Development Process
+
+The project started with requirements engineering and business process analysis. System documentation was produced, including System Request (SR), Software Requirements Specification (SRS), user stories, functional and non-functional requirements, communication interface specifications, flowcharts, and database design. The system architecture was designed to integrate ESP32 devices, backend services, and the mobile application.
+
+My Contributions
+
+Led the requirements engineering process, prepared system documentation, designed the system architecture, and defined database structures to support IoT integration.
+
+Impact
+
+Provides a structured system design that supports efficient monitoring, automated environmental control, and future implementation.
+
+Technologies & Tools
+ESP32, DHT22 Sensor, Relay Modules, Flutter, Golang, Supabase, PostgreSQL, Enterprise Architect, Figma.`,
 
     techStackDetailed: [
       {
@@ -195,12 +236,32 @@ As a System Analyst, I was responsible for requirements analysis, business proce
     teamSize: "3 MEMBERS",
 
     overview: `
-SIPINJAM (Inventory Loan Management System) is a web-based information system developed to streamline inventory borrowing and asset management processes within an organization. The system digitalizes manual borrowing workflows by providing centralized inventory records, loan requests, return management, and reporting features, improving administrative efficiency and asset traceability.
+Problem
 
-Developed as an academic team project, SIPINJAM was built using the Laravel framework with a MySQL database to deliver a secure and responsive web application. The system supports role-based authentication, inventory management, borrowing and return transactions, and administrative reporting to simplify day-to-day inventory operations.
+Manual inventory borrowing processes make it difficult to track loan requests, approvals, and asset returns efficiently.
 
-As a System Analyst and Web Developer, I contributed to requirements analysis, business process modeling, database design, and Laravel-based web development. I was primarily responsible for developing the student loan request feature, administrator approval workflow, password recovery functionality, and inventory return management, ensuring an efficient and well-structured inventory borrowing process.
-    `,
+Goal
+
+Develop a web-based inventory management system that simplifies borrowing workflows and improves inventory administration.
+
+Solution
+
+A Laravel-based web application implementing the MVC architecture to manage inventory data, borrowing requests, administrator approvals, and return processes.
+
+Development Process
+
+The project began with business process analysis and user requirements analysis. A relational database structure and MVC architecture were designed before implementing the application using Laravel. Black Box Testing was conducted to validate system functionality.
+
+My Contributions
+
+Analyzed business requirements, designed the MVC application architecture and relational database, developed borrowing, approval, return, and password recovery features, and performed Black Box Testing.
+
+Impact
+
+Digitized the inventory borrowing process, improving efficiency, data accuracy, and inventory tracking.
+
+Technologies & Tools
+Laravel, PHP, MySQL, Tailwind CSS, HTML, JavaScript, AJAX, Git, GitHub, Laragon.`,
 
     techStackDetailed: [
       {
@@ -275,12 +336,32 @@ As a System Analyst and Web Developer, I contributed to requirements analysis, b
     teamSize: "3 MEMBERS",
 
     overview: `
-PROAPPS (Program Kerja Management Information System) is a system analysis and design project for a mobile-based information system that supports work program management within HIMATIF, Faculty of Computer Science, University of Jember. The project was conducted to analyze organizational workflows and translate stakeholder needs into a structured system design before implementation.
+Problem
 
-Developed as an academic team project, PROAPPS focuses on producing comprehensive system documentation, including business process models, functional requirements, UML diagrams, and user interface prototypes. The project follows an Agile approach to ensure that the proposed system aligns with organizational needs and user expectations.
+Managing organizational work programs through manual documentation and scattered communication often leads to miscommunication, inefficient coordination, and poor documentation.
 
-As a System Analyst, I was responsible for stakeholder analysis, requirements elicitation, business process modeling, UML documentation, user flow design, and software requirements specification. The outcome of this project was a complete system design and documentation package that can serve as the foundation for future system development.
-    `,
+Goal
+
+Design a structured mobile-based information system to support work program management within the student organization.
+
+Solution
+
+A complete system analysis and design document that defines business processes, functional requirements, user roles, and system interactions before implementation.
+
+Development Process
+
+The project began with stakeholder analysis and business process analysis to identify organizational needs. A System Request document was prepared, followed by UML modeling consisting of Use Case, Activity, Class, Sequence, Communication, State, and Object Diagrams using an Agile approach.
+
+My Contributions
+
+Conducted stakeholder analysis, business process analysis, requirements analysis, prepared the System Request document, and developed comprehensive UML documentation.
+
+Impact
+
+Provides a structured system design that serves as a foundation for future application development and improves communication among project stakeholders.
+
+Technologies & Tools
+Draw.io, Enterprise Architect, Trello, UML Modeling, Agile.`,
 
     techStackDetailed: [
       {
@@ -292,13 +373,11 @@ As a System Analyst, I was responsible for stakeholder analysis, requirements el
           "Sequence Diagram — Illustrates interactions between system components.",
           "Communication Diagram — Visualizes object interactions and message exchanges within the system.",
           "Object Diagram — Represents object instances and their relationships at a specific point in time.",
-          "Entity Relationship Diagram (ERD) — Designs the database structure and relationships."
         ],
       },
       {
         category: "TOOLS",
         tags: [
-          "Draw.io — Visual system modeling and diagramming.",
           "Enterprise Architect — UML modeling and software architecture documentation.",
           "Trello — Project management task tracking.",
         ],
@@ -346,12 +425,32 @@ As a System Analyst, I was responsible for stakeholder analysis, requirements el
     teamSize: "3 MEMBERS",
 
     overview: `
-KandangDigital is a mobile application designed to help goat farmers manage farm operations through an integrated digital platform. The application supports financial management, livestock inventory, and health monitoring, enabling farmers to organize daily activities more efficiently and systematically.
+Problem
 
-Developed as an academic team project, KandangDigital adopted the Design Thinking methodology to understand the challenges faced by goat farmers and transform them into user-centered digital solutions. Through the stages of empathize, define, ideate, prototype, and test, the project focused on creating an intuitive and accessible user experience tailored to the needs of its target users.
+Goat farmers often manage financial records, livestock data, and health monitoring manually, making information difficult to organize and access.
 
-As a UI/UX Designer, I contributed to user research, stakeholder interviews, persona development, user journey mapping, task flow design, wireframing, high-fidelity prototyping, and usability testing. I was primarily responsible for designing the Authentication, Financial Management, and Help Center features, ensuring they addressed user needs while providing an intuitive and consistent user experience.
-    `,
+Goal
+
+Design a user-friendly mobile application that simplifies daily farm management activities.
+
+Solution
+
+A mobile application prototype designed using the Design Thinking methodology to improve usability and support efficient farm management.
+
+Development Process
+
+The project followed the Design Thinking process, including user research, stakeholder interviews, information architecture, user flow, task flow, wireframing, high-fidelity prototyping, and usability testing using Maze.
+
+My Contributions
+
+Conducted user research, designed information architecture, user flows, wireframes, and interactive prototypes, and refined the Authentication, Financial Management, and Help Center features based on usability testing results.
+
+Impact
+
+Provides a more intuitive user experience that helps farmers manage farm operations more efficiently.
+
+Technologies & Tools
+Figma, Maze, Design Thinking, Usability Testing, User Interface Design.`,
 
     techStackDetailed: [
       {

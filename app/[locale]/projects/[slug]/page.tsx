@@ -6,17 +6,252 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { 
-  Lightbulb, 
   ChevronLeft, 
   ChevronRight, 
   X, 
-  Maximize2 
+  Maximize2,
+  AlertCircle,
+  Target,
+  Sparkles,
+  GitBranch,
+  User,
+  TrendingUp,
+  Wrench,
+  HelpCircle
 } from "lucide-react";
 import { projects } from "@/data/projects";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
+import { Project } from "@/types";
+
+type TranslationFn = ReturnType<typeof useTranslations>;
+
+interface CaseStudySection {
+  heading: string;
+  paragraphs: string[];
+}
+
+const parseOverview = (text: string): CaseStudySection[] => {
+  const normalized = text.replace(/\r\n/g, "\n");
+  const lines = normalized.split("\n").map((l) => l.trim());
+  const sections: CaseStudySection[] = [];
+  let currentSection: CaseStudySection | null = null;
+
+  const headingKeywords = [
+    "problem", "goal", "solution", "development process", "my contributions", "impact", "technologies & tools",
+    "masalah", "permasalahan", "tujuan", "solusi", "proses pengembangan", "kontribusi saya", "dampak", "teknologi & alat", "teknologi & perangkat", "teknologi dan alat", "teknologi & tools"
+  ];
+
+  for (const line of lines) {
+    if (!line) continue;
+
+    if (headingKeywords.includes(line.toLowerCase())) {
+      if (currentSection) {
+        sections.push(currentSection);
+      }
+      currentSection = { heading: line, paragraphs: [] };
+    } else {
+      if (currentSection) {
+        currentSection.paragraphs.push(line);
+      } else {
+        currentSection = { heading: "", paragraphs: [line] };
+      }
+    }
+  }
+  if (currentSection) {
+    sections.push(currentSection);
+  }
+  return sections;
+};
+
+const getSectionConfig = (heading: string) => {
+  const h = heading.toLowerCase();
+  if (h.includes("problem") || h.includes("masalah")) {
+    return {
+      icon: AlertCircle,
+      iconColor: "text-red-500",
+      bgColor: "bg-red-500/10 dark:bg-red-500/20",
+      borderColor: "border-red-500",
+      accentBg: "bg-red-500",
+    };
+  }
+  if (h.includes("goal") || h.includes("tujuan")) {
+    return {
+      icon: Target,
+      iconColor: "text-blue-500",
+      bgColor: "bg-blue-500/10 dark:bg-blue-500/20",
+      borderColor: "border-blue-500",
+      accentBg: "bg-blue-500",
+    };
+  }
+  if (h.includes("solution") || h.includes("solusi")) {
+    return {
+      icon: Sparkles,
+      iconColor: "text-amber-500",
+      bgColor: "bg-amber-500/10 dark:bg-amber-500/20",
+      borderColor: "border-amber-500",
+      accentBg: "bg-neo-yellow",
+    };
+  }
+  if (h.includes("process") || h.includes("proses")) {
+    return {
+      icon: GitBranch,
+      iconColor: "text-purple-500",
+      bgColor: "bg-purple-500/10 dark:bg-purple-500/20",
+      borderColor: "border-purple-500",
+      accentBg: "bg-purple-500",
+    };
+  }
+  if (h.includes("contribution") || h.includes("kontribusi")) {
+    return {
+      icon: User,
+      iconColor: "text-emerald-500",
+      bgColor: "bg-emerald-500/10 dark:bg-emerald-500/20",
+      borderColor: "border-emerald-500",
+      accentBg: "bg-emerald-500",
+    };
+  }
+  if (h.includes("impact") || h.includes("dampak")) {
+    return {
+      icon: TrendingUp,
+      iconColor: "text-pink-500",
+      bgColor: "bg-pink-500/10 dark:bg-pink-500/20",
+      borderColor: "border-pink-500",
+      accentBg: "bg-neo-pink",
+    };
+  }
+  if (h.includes("tech") || h.includes("tools") || h.includes("teknologi") || h.includes("alat") || h.includes("perangkat") || h.includes("perkakas")) {
+    return {
+      icon: Wrench,
+      iconColor: "text-sky-500",
+      bgColor: "bg-sky-500/10 dark:bg-sky-500/20",
+      borderColor: "border-sky-500",
+      accentBg: "bg-neo-blue",
+    };
+  }
+  return {
+    icon: HelpCircle,
+    iconColor: "text-zinc-500",
+    bgColor: "bg-zinc-500/10 dark:bg-zinc-500/20",
+    borderColor: "border-zinc-500",
+    accentBg: "bg-zinc-500",
+  };
+};
+
+const renderSectionContent = (
+  section: CaseStudySection,
+  project: Project,
+  tDb: TranslationFn
+) => {
+  const isTech = section.heading.toLowerCase().includes("tech") || 
+                 section.heading.toLowerCase().includes("tools") || 
+                 section.heading.toLowerCase().includes("teknologi") || 
+                 section.heading.toLowerCase().includes("alat") || 
+                 section.heading.toLowerCase().includes("perangkat") || 
+                 section.heading.toLowerCase().includes("perkakas");
+
+  if (isTech) {
+    const techs = section.paragraphs[0]
+      ? section.paragraphs[0].split(",").map(t => t.trim()).filter(Boolean)
+      : [];
+    return (
+      <div className="space-y-6">
+        <div className="flex flex-wrap gap-2.5">
+          {techs.map((tech) => (
+            <span 
+              key={tech} 
+              className="px-3.5 py-1.5 bg-neo-yellow dark:bg-zinc-800 text-black dark:text-white font-black uppercase text-xs md:text-sm border-2 border-foreground rounded-[4px] shadow-[2px_2px_0px_var(--neo-black)]"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+        
+        {project.techStackDetailed && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-4 border-t-2 border-foreground/15">
+            {project.techStackDetailed.map((stack) => (
+              <div 
+                key={stack.category} 
+                className="space-y-3 bg-white/50 dark:bg-zinc-900/50 border-2 border-foreground rounded-[6px] p-4 shadow-[2px_2px_0px_var(--neo-black)]"
+              >
+                <h5 className="text-xs font-black uppercase tracking-wider text-foreground border-b-2 border-foreground/10 pb-1 flex items-center justify-between">
+                  <span>{stack.category}</span>
+                  <span className="w-2 h-2 rounded-full bg-foreground" />
+                </h5>
+                <div className="space-y-2 pt-1">
+                  {stack.tags.map((tag: string) => {
+                    const dashIndex = tag.indexOf(" — ");
+                    if (dashIndex !== -1) {
+                      const name = tag.substring(0, dashIndex);
+                      const desc = tag.substring(dashIndex + 3);
+                      const translationKey = `techStack.${name.replace(/\./g, "-")}`;
+                      const descText = tDb.has(translationKey) ? tDb(translationKey) : desc;
+                      return (
+                        <div 
+                          key={tag} 
+                          className="flex items-start gap-2 text-foreground/80 text-xs leading-relaxed"
+                        >
+                          <span className="text-foreground/45 font-black text-sm leading-none select-none mt-[1px]">•</span>
+                          <span className="font-semibold text-foreground/80">
+                            <strong className="font-black text-foreground">{name}</strong> — {descText}
+                          </span>
+                        </div>
+                      );
+                    }
+                    return (
+                      <div 
+                        key={tag} 
+                        className="flex items-start gap-2 text-foreground/80 text-xs leading-relaxed"
+                      >
+                        <span className="text-foreground/45 font-black text-sm leading-none select-none mt-[1px]">•</span>
+                        <strong className="font-black text-foreground">{tag}</strong>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  const listItems: string[] = [];
+  const paragraphs: string[] = [];
+
+  for (const p of section.paragraphs) {
+    const trimmed = p.trim();
+    if (trimmed.startsWith("-") || trimmed.startsWith("•") || trimmed.startsWith("*")) {
+      listItems.push(trimmed.substring(1).trim());
+    } else {
+      paragraphs.push(trimmed);
+    }
+  }
+
+  return (
+    <div className="space-y-4">
+      {paragraphs.map((p, idx) => (
+        <p key={idx} className="text-sm md:text-base font-semibold text-foreground/80 leading-relaxed">
+          {p}
+        </p>
+      ))}
+      
+      {listItems.length > 0 && (
+        <ul className="space-y-2 pt-2">
+          {listItems.map((item, idx) => (
+            <li key={idx} className="flex items-start gap-2.5 text-sm md:text-base font-semibold text-foreground/80 leading-relaxed">
+              <span className="text-neo-blue font-black text-lg leading-none select-none mt-0.5">•</span>
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
 
 interface PageProps {
   params: Promise<{
@@ -43,6 +278,9 @@ export default function ProjectDetailPage({ params }: PageProps) {
   const tDb = useTranslations("Database.projects." + project.slug);
   const tNavbar = useTranslations("Navbar");
   const activeLang = tNavbar("home") === "Beranda" ? "id" : "en";
+
+  const overviewText = tDb.has("overview") ? tDb("overview") : project.overview;
+  const parsedSections = parseOverview(overviewText);
 
   // Interactive UI States
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
@@ -168,82 +406,34 @@ export default function ProjectDetailPage({ params }: PageProps) {
 
       </section>
 
-      {/* 2. Project Overview Section */}
-      <section className="px-4 space-y-6 max-w-4xl mx-auto">
-        <Card variant="white" className="shadow-[8px_8px_0px_var(--neo-black)] p-6 md:p-8 space-y-4">
-          <CardHeader className="border-b-4 border-foreground pb-2 mb-4 flex flex-row items-center gap-2.5">
-            <Lightbulb className="w-6 h-6 stroke-[2.5px] text-foreground" />
-            <CardTitle className="text-2xl font-black uppercase text-foreground">
-              {t("overview")}
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            {(tDb.has("overview") ? tDb("overview") : project.overview)
-              .split("\n\n")
-              .filter((p: string) => p.trim() !== "")
-              .map((paragraph: string, idx: number) => (
-                <p key={idx} className="text-sm md:text-base font-semibold text-foreground/80 leading-relaxed">
-                  {paragraph.trim()}
-                </p>
-              ))}
-          </CardContent>
-        </Card>
-      </section>
+      {/* 2. Structured Case Study Layout */}
+      <section className="px-4 space-y-12 max-w-4xl mx-auto">
+        {parsedSections.map((section) => {
+          if (!section.heading) return null;
+          const config = getSectionConfig(section.heading);
+          const IconComponent = config.icon;
 
-
-      {/* 4. Worked With (Detailed Tech Stack) */}
-      {project.techStackDetailed && (
-        <section className="px-4 space-y-8 max-w-4xl mx-auto">
-          <h4 className="text-sm font-black uppercase tracking-widest text-foreground/60 text-center">{t("forged")}</h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {project.techStackDetailed.map((stack) => (
-              <div 
-                key={stack.category} 
-                className="space-y-4 bg-white dark:bg-zinc-900 border-4 border-foreground rounded-[8px] p-5 shadow-[4px_4px_0px_var(--neo-black)]"
-              >
-                <div className="space-y-3">
-                  <h5 className="text-xs font-black uppercase tracking-wider text-foreground border-b-2 border-foreground/20 pb-1.5 flex items-center justify-between">
-                    <span>{stack.category}</span>
-                    <span className="w-2.5 h-2.5 rounded-full bg-foreground border border-foreground" />
-                  </h5>
-                  <div className="space-y-2.5 pt-1">
-                    {stack.tags.map((tag) => {
-                      const dashIndex = tag.indexOf(" — ");
-                      if (dashIndex !== -1) {
-                        const name = tag.substring(0, dashIndex);
-                        const desc = tag.substring(dashIndex + 3);
-                        // Lookup translated tag description
-                        const translationKey = `techStack.${name.replace(/\./g, "-")}`;
-                        const descText = tDb.has(translationKey) ? tDb(translationKey) : desc;
-                        return (
-                          <div 
-                            key={tag} 
-                            className="flex items-start gap-2 text-foreground/80 text-xs md:text-sm leading-relaxed"
-                          >
-                            <span className="text-foreground/40 font-black text-base leading-none select-none mt-[1px]">•</span>
-                            <span className="font-semibold text-foreground/80">
-                              <strong className="font-black text-foreground">{name}</strong> — {descText}
-                            </span>
-                          </div>
-                        );
-                      }
-                      return (
-                        <div 
-                          key={tag} 
-                          className="flex items-start gap-2 text-foreground/80 text-xs md:text-sm leading-relaxed"
-                        >
-                          <span className="text-foreground/40 font-black text-base leading-none select-none mt-[1px]">•</span>
-                          <strong className="font-black text-foreground">{tag}</strong>
-                        </div>
-                      );
-                    })}
-                  </div>
+          return (
+            <Card 
+              key={section.heading} 
+              variant="white" 
+              className="shadow-[8px_8px_0px_var(--neo-black)] p-6 md:p-8 space-y-4"
+            >
+              <CardHeader className="border-b-4 border-foreground pb-4 mb-4 flex flex-row items-center gap-3">
+                <div className={cn("p-2 rounded-[6px] border-2 border-foreground shadow-[2px_2px_0px_rgba(0,0,0,1)] text-black", config.accentBg)}>
+                  <IconComponent className="w-5 h-5 stroke-[2.5px]" />
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
+                <CardTitle className="text-xl md:text-2xl font-black uppercase text-foreground">
+                  {section.heading}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                {renderSectionContent(section, project, tDb)}
+              </CardContent>
+            </Card>
+          );
+        })}
+      </section>
 
 
 
