@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Geist_Mono } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { Navbar } from "@/components/layout/Navbar";
 import { MobileHeader, MobileNav } from "@/components/layout/MobileNav";
@@ -112,6 +113,9 @@ export default async function RootLayout({
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
+
+      <GoogleAnalytics gaId="G-VFFTWGSY5B" />
+      
     </html>
   );
 }
