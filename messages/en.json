@@ -1,9 +1,10 @@
 {
   "Navbar": {
     "home": "Home",
-    "projects": "Projects",
-    "organization": "Organization",
     "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "skills": "Skills",
     "contact": "Contact Me"
   },
   "Footer": {
@@ -234,7 +235,7 @@
     }
   },
   "Organization": {
-    "title": "Organization Experience",
+    "title": "Experience",
     "subtitle": "Organizational experiences that helped me develop communication, coordination, leadership, and teamwork skills while contributing to various academic and student activities.",
     "timeline": "Timeline",
     "pr": "PUBLIC RELATIONS",

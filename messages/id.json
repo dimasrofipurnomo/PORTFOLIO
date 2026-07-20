@@ -1,9 +1,10 @@
 {
   "Navbar": {
     "home": "Beranda",
-    "projects": "Proyek",
-    "organization": "Organisasi",
     "about": "Tentang",
+    "projects": "Proyek",
+    "experience": "Pengalaman",
+    "skills": "Keahlian",
     "contact": "Hubungi Saya"
   },
   "Footer": {
@@ -265,7 +266,7 @@
     }
   },
   "Organization": {
-    "title": "Pengalaman Organisasi",
+    "title": "Pengalaman",
     "subtitle": "Pengalaman berorganisasi yang membantu saya mengembangkan kemampuan komunikasi, koordinasi, kepemimpinan, dan kerja sama tim dalam mendukung berbagai kegiatan akademik dan kemahasiswaan.",
     "timeline": "Linimasa",
     "categories": {
