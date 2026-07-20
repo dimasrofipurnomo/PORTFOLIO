@@ -263,7 +263,7 @@ interface PageProps {
 export default function ProjectDetailPage({ params }: PageProps) {
   // Resolve params Promise
   const resolvedParams = use(params);
-  const { slug } = resolvedParams;
+  const { slug, locale } = resolvedParams;
 
   // Find project details
   const project = projects.find((p) => p.slug === slug);
@@ -276,8 +276,7 @@ export default function ProjectDetailPage({ params }: PageProps) {
   // Load translations
   const t = useTranslations("Projects.details");
   const tDb = useTranslations("Database.projects." + project.slug);
-  const tNavbar = useTranslations("Navbar");
-  const activeLang = tNavbar("home") === "Beranda" ? "id" : "en";
+  const activeLang = locale === "id" ? "id" : "en";
 
   const overviewText = tDb.has("overview") ? tDb("overview") : project.overview;
   const parsedSections = parseOverview(overviewText);

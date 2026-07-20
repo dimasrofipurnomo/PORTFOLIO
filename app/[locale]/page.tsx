@@ -35,16 +35,11 @@ import { Tag } from "@/components/ui/Tag";
 import { getTechIconUrl } from "@/lib/techIcons";
 import { 
   organizations, 
-  leadershipSkills, 
   eventGallery 
 } from "@/data/organizations";
 import { cn } from "@/lib/utils";
 
-interface ExpertiseItem {
-  title: string;
-  variant: "yellow" | "blue" | "pink" | "white";
-  points: string[];
-}
+
 
 interface GalleryCardProps {
   event: typeof eventGallery[0];
@@ -137,8 +132,7 @@ export default function Home() {
   // Active language code based on locale
   const activeLang = locale === "id" ? "id" : "en";
 
-  // Leadership skill category keys for mapping
-  const skillCatKeys = ["pr", "lead", "pm", "team"];
+
 
   // Gallery static titles translation
   const eventTitles = {
@@ -174,46 +168,7 @@ export default function Home() {
     }
   };
 
-  // Dynamically load hard skills (expertise) with safe fallback
-  let expertise: ExpertiseItem[] = [];
-  try {
-    const expertiseRaw = tAbout.raw("expertise") as Record<string, unknown>;
-    if (expertiseRaw && typeof expertiseRaw === "object") {
-      const expertiseKeys = Object.keys(expertiseRaw).filter(
-        (key) => typeof expertiseRaw[key] === "object" && expertiseRaw[key] !== null
-      );
-      expertise = expertiseKeys.map((catKey) => {
-        const catObj = expertiseRaw[catKey] as Record<string, string>;
-        const title = catObj.title || "";
-        
-        const pointKeys = Object.keys(catObj).filter((k) => k.startsWith("p"));
-        const sortedPoints = pointKeys
-          .map((k) => {
-            const num = parseInt(k.substring(1), 10);
-            return { num, text: catObj[k] };
-          })
-          .sort((a, b) => a.num - b.num)
-          .map((item) => item.text);
 
-        const colorMapping: Record<string, "yellow" | "blue" | "pink" | "white"> = {
-          analysis: "yellow",
-          software: "blue",
-          backend: "blue",
-          webmobile: "pink",
-          uiux: "pink",
-        };
-        const variant = colorMapping[catKey] || "white";
-
-        return {
-          title,
-          variant,
-          points: sortedPoints,
-        };
-      });
-    }
-  } catch (e) {
-    console.error("Error loading expertise dynamic messages", e);
-  }
 
   // Dynamically load soft skills with safe fallback
   let softSkills: { name: string; icon: React.ComponentType<{ className?: string }> }[] = [];
@@ -324,16 +279,22 @@ export default function Home() {
   });
 
   const getFilterLabel = (filter: string) => {
-    if (filter === "All") return tNavbar("home") === "Beranda" ? "Semua" : "All";
+    if (filter === "All") return locale === "id" ? "Semua" : "All";
     if (filter === "System Analyst") return tAbout("expertise.analysis.title");
     return filter;
   };
 
   return (
-    <div className="space-y-16 md:space-y-24">
+    <div className="space-y-6 md:space-y-8">
       
       {/* 1. Home Section */}
-      <section id="home" className="min-h-[calc(100vh-4rem)] flex flex-col justify-center py-12 md:py-16 scroll-mt-20">
+      <section id="home" className="min-h-[50vh] flex flex-col justify-center py-4 md:py-6 scroll-mt-20">
+        <div className="px-4 mb-8 select-none flex items-center gap-2 text-xs font-black uppercase tracking-widest text-foreground">
+          <span className="px-2 py-0.5 bg-white dark:bg-zinc-900 border-2 border-foreground rounded-[4px] shadow-[2px_2px_0px_var(--neo-black)] text-[10px]">
+            01
+          </span>
+          <span>{tNavbar("home")}</span>
+        </div>
         <div className="space-y-16 md:space-y-24">
           <AnimateIn>
             <div className="text-center space-y-6 md:space-y-8 max-w-4xl mx-auto px-4">
@@ -367,6 +328,24 @@ export default function Home() {
             />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <AnimateIn delay={0} className="h-full">
+                <Card variant="pink" interactive className="flex flex-col h-full">
+                  <CardHeader>
+                    <User className="w-8 h-8 mb-2 stroke-[2.5px]" />
+                    <CardTitle>{tHome("find.about.title")}</CardTitle>
+                    <CardDescription className="text-black/85">{tHome("find.about.subtitle")}</CardDescription>
+                  </CardHeader>
+                  <CardContent className="flex-1 text-black/90">
+                    {tHome("find.about.text")}
+                  </CardContent>
+                  <CardFooter>
+                    <Link href="#about" onClick={(e) => handleAnchorClick(e, "about")} className="text-xs font-black uppercase tracking-wider hover:underline">
+                      {tHome("find.about.cta")}
+                    </Link>
+                  </CardFooter>
+                </Card>
+              </AnimateIn>
+
+              <AnimateIn delay={0.1} className="h-full">
                 <Card variant="yellow" interactive className="flex flex-col h-full">
                   <CardHeader>
                     <Briefcase className="w-8 h-8 mb-2 stroke-[2.5px]" />
@@ -384,7 +363,7 @@ export default function Home() {
                 </Card>
               </AnimateIn>
 
-              <AnimateIn delay={0.1} className="h-full">
+              <AnimateIn delay={0.2} className="h-full">
                 <Card variant="blue" interactive className="flex flex-col h-full text-white">
                   <CardHeader>
                     <Building className="w-8 h-8 mb-2 stroke-[2.5px]" />
@@ -401,33 +380,22 @@ export default function Home() {
                   </CardFooter>
                 </Card>
               </AnimateIn>
-
-              <AnimateIn delay={0.2} className="h-full">
-                <Card variant="pink" interactive className="flex flex-col h-full">
-                  <CardHeader>
-                    <User className="w-8 h-8 mb-2 stroke-[2.5px]" />
-                    <CardTitle>{tHome("find.about.title")}</CardTitle>
-                    <CardDescription className="text-black/85">{tHome("find.about.subtitle")}</CardDescription>
-                  </CardHeader>
-                  <CardContent className="flex-1 text-black/90">
-                    {tHome("find.about.text")}
-                  </CardContent>
-                  <CardFooter>
-                    <Link href="#about" onClick={(e) => handleAnchorClick(e, "about")} className="text-xs font-black uppercase tracking-wider hover:underline">
-                      {tHome("find.about.cta")}
-                    </Link>
-                  </CardFooter>
-                </Card>
-              </AnimateIn>
             </div>
           </div>
         </div>
       </section>
 
       {/* 2. About Section */}
-      <section id="about" className="min-h-screen flex flex-col justify-center py-12 md:py-16 scroll-mt-20 space-y-16 md:space-y-24">
-        {/* About Hero Section */}
-        <AnimateIn>
+      <section id="about" className="flex flex-col justify-center py-4 md:py-6 scroll-mt-20">
+        <div className="px-4 mb-8 select-none flex items-center gap-2 text-xs font-black uppercase tracking-widest text-foreground">
+          <span className="px-2 py-0.5 bg-white dark:bg-zinc-900 border-2 border-foreground rounded-[4px] shadow-[2px_2px_0px_var(--neo-black)] text-[10px]">
+            02
+          </span>
+          <span>{tNavbar("about")}</span>
+        </div>
+        <div className="space-y-16 md:space-y-24">
+          {/* About Hero Section */}
+          <AnimateIn>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center px-4">
             <div className="md:col-span-7 space-y-6">
               <div className="space-y-3">
@@ -533,12 +501,20 @@ export default function Home() {
             </AnimateIn>
           </div>
         </div>
+        </div>
       </section>
 
       {/* 3. Projects Section */}
-      <section id="projects" className="min-h-screen flex flex-col justify-center py-12 md:py-16 scroll-mt-20 space-y-16 md:space-y-24">
-        {/* Header & Filters */}
-        <AnimateIn>
+      <section id="projects" className="flex flex-col justify-center py-4 md:py-6 scroll-mt-20">
+        <div className="px-4 mb-8 select-none flex items-center gap-2 text-xs font-black uppercase tracking-widest text-foreground">
+          <span className="px-2 py-0.5 bg-white dark:bg-zinc-900 border-2 border-foreground rounded-[4px] shadow-[2px_2px_0px_var(--neo-black)] text-[10px]">
+            03
+          </span>
+          <span>{tNavbar("projects")}</span>
+        </div>
+        <div className="space-y-16 md:space-y-24">
+          {/* Header & Filters */}
+          <AnimateIn>
           <div className="space-y-8 px-4">
             <div className="space-y-3 text-center flex flex-col items-center justify-center">
               <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight text-foreground leading-none">
@@ -596,7 +572,7 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             
             <AnimateIn delay={0} className="h-full">
               <Card variant="white" className="flex flex-col h-full shadow-[6px_6px_0px_var(--neo-black)]">
@@ -667,37 +643,22 @@ export default function Home() {
               </Card>
             </AnimateIn>
 
-            <AnimateIn delay={0.3} className="h-full">
-              <Card variant="white" className="flex flex-col h-full shadow-[6px_6px_0px_var(--neo-black)]">
-                <CardHeader className="flex flex-row items-center gap-3 border-b-2 border-foreground/10 pb-3 mb-4">
-                  <div className="p-2 bg-neo-blue text-white neo-border rounded-[4px] shadow-[1px_1px_0px_rgba(0,0,0,1)]">
-                    <Users className="w-5 h-5 stroke-[2.5px]" />
-                  </div>
-                  <CardTitle className="text-base font-black uppercase text-foreground">
-                    {tProjects("learned.team.title")}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-3 font-semibold text-xs text-foreground/80">
-                    {getLearnedPoints("team").map((point, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <span className="w-1 h-1 rounded-full bg-foreground shrink-0 mt-1.5" />
-                        <span>{point}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            </AnimateIn>
-
           </div>
+        </div>
         </div>
       </section>
 
       {/* 4. Experience Section */}
-      <section id="experience" className="min-h-screen flex flex-col justify-center py-12 md:py-16 scroll-mt-20 space-y-16 md:space-y-24 relative">
-        {/* Header Section */}
-        <AnimateIn>
+      <section id="experience" className="flex flex-col justify-center py-4 md:py-6 scroll-mt-20 relative">
+        <div className="px-4 mb-8 select-none flex items-center gap-2 text-xs font-black uppercase tracking-widest text-foreground">
+          <span className="px-2 py-0.5 bg-white dark:bg-zinc-900 border-2 border-foreground rounded-[4px] shadow-[2px_2px_0px_var(--neo-black)] text-[10px]">
+            04
+          </span>
+          <span>{tNavbar("experience")}</span>
+        </div>
+        <div className="space-y-16 md:space-y-24 relative w-full">
+          {/* Header Section */}
+          <AnimateIn>
           <div className="flex flex-col items-center justify-center text-center gap-6 px-4">
             <div className="space-y-3 max-w-2xl mx-auto">
               <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight text-foreground leading-none">
@@ -831,120 +792,70 @@ export default function Home() {
             ))}
           </div>
         </div>
-
-        {/* What I Learned (Leadership Skills) Section */}
-        <div className="px-4 space-y-8 max-w-5xl mx-auto w-full">
-          <div className="text-center">
-            <h3 className="text-2xl md:text-3xl font-black uppercase text-foreground inline-block border-b-4 border-foreground pb-2 leading-none">
-              {tOrganization("learned.title")}
-            </h3>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {leadershipSkills.map((skill, idx) => {
-              const catKey = skillCatKeys[idx];
-              return (
-                <AnimateIn key={skill.category} delay={idx * 0.1} className="h-full">
-                  <Card variant={skill.color} className="flex flex-col h-full shadow-[6px_6px_0px_var(--neo-black)]">
-                    <CardHeader className="border-b border-black/10 dark:border-white/10 pb-2 mb-3">
-                      <CardTitle className="text-sm font-black uppercase tracking-wider leading-none">
-                        {tOrganization("categories." + catKey)}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="flex-1">
-                      <ul className="space-y-2 text-xs font-semibold leading-relaxed">
-                        {skill.points.map((point, pIdx) => {
-                          const translationKey = `skills.${catKey}.p${pIdx + 1}`;
-                          const pointText = tOrganization.has(translationKey) ? tOrganization(translationKey) : point;
-                          return (
-                            <li key={pIdx} className="flex items-start gap-1.5">
-                              <span className="text-foreground/50 select-none">•</span>
-                              <span>{pointText}</span>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </CardContent>
-                  </Card>
-                </AnimateIn>
-              );
-            })}
-          </div>
         </div>
       </section>
 
       {/* 5. Skills Section */}
-      <section id="skills" className="min-h-screen flex flex-col justify-center py-12 md:py-16 scroll-mt-20 space-y-16 md:space-y-24">
-        {/* Technical Expertise */}
-        <div className="px-4 space-y-8 w-full">
-          <SectionTitle
-            title={tAbout("expertise.title")}
-            highlightedWord={tAbout("expertise.highlight")}
-            highlightColor="yellow"
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {expertise.map((exp, idx) => (
-              <AnimateIn key={exp.title} delay={idx * 0.1} className="h-full">
-                <Card variant={exp.variant} interactive className="flex flex-col h-full">
-                  <CardHeader>
-                    <CardTitle className="text-xl uppercase font-black tracking-tight">{exp.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="flex-1">
-                    <ul className="space-y-3 font-semibold text-sm">
-                      {exp.points.map((point, idx) => (
-                        <li key={idx} className="flex items-center gap-2">
-                          <span className="w-1.5 h-1.5 rounded-full bg-current shrink-0" />
-                          <span>{point}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              </AnimateIn>
-            ))}
-          </div>
+      <section id="skills" className="flex flex-col justify-center py-4 md:py-6 scroll-mt-20">
+        <div className="px-4 mb-8 select-none flex items-center gap-2 text-xs font-black uppercase tracking-widest text-foreground">
+          <span className="px-2 py-0.5 bg-white dark:bg-zinc-900 border-2 border-foreground rounded-[4px] shadow-[2px_2px_0px_var(--neo-black)] text-[10px]">
+            05
+          </span>
+          <span>{tNavbar("skills")}</span>
         </div>
-
-        {/* Soft Skills */}
-        <AnimateIn>
-          <div className="px-4 max-w-5xl mx-auto w-full">
-            <div className="relative overflow-hidden rounded-[8px] bg-white dark:bg-zinc-900 text-foreground border-4 border-foreground shadow-[6px_6px_0px_var(--neo-black)] p-6 md:p-8 font-sans">
-              <div className="relative z-10 space-y-6">
-                <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-foreground border-b-2 border-foreground/10 pb-3 flex items-center justify-between">
-                  <span>{tAbout("soft.title")}</span>
-                  <span className="w-2 h-2 rounded-full bg-foreground" />
-                </h3>
-
-                <div className="flex flex-wrap gap-2.5">
-                  {softSkills.map((skill, idx) => {
-                    const Icon = skill.icon;
-                    return (
-                      <Tag 
-                        key={idx} 
-                        variant="white" 
-                        className="shadow-[1.5px_1.5px_0px_var(--neo-black)] flex items-center gap-1.5 text-xs py-1 px-3 bg-slate-50 dark:bg-zinc-800"
-                      >
-                        <Icon className="w-4 h-4 text-foreground shrink-0 stroke-[2px]" />
-                        <span className="font-bold text-foreground">{skill.name}</span>
-                      </Tag>
-                    );
-                  })}
-                </div>
-              </div>
+        <div className="space-y-16 md:space-y-24">
+          {/* Section Title */}
+          <AnimateIn>
+          <div className="flex flex-col items-center justify-center text-center gap-6 px-4">
+            <div className="space-y-3 max-w-2xl mx-auto">
+              <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight text-foreground leading-none">
+                {tNavbar("skills")}
+              </h2>
             </div>
           </div>
         </AnimateIn>
 
-        {/* Technology Stack */}
-        <AnimateIn>
-          <div className="px-4 space-y-8 w-full">
-            <SectionTitle
-              title={tAbout("stack.title")}
-              highlightedWord={tAbout("stack.highlight")}
-              highlightColor="blue"
-              description={tAbout("stack.desc")}
-            />
+        {/* Soft Skills Section */}
+        <div className="px-4 space-y-8 max-w-5xl mx-auto w-full">
+          <div className="border-l-4 border-foreground pl-4">
+            <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-foreground leading-none">
+              {tAbout("soft.title")}
+            </h3>
+          </div>
 
+          <AnimateIn>
+            <div className="flex flex-wrap gap-2.5">
+              {softSkills.map((skill, idx) => {
+                const Icon = skill.icon;
+                return (
+                  <Tag 
+                    key={idx} 
+                    variant="white" 
+                    className="shadow-[1.5px_1.5px_0px_var(--neo-black)] flex items-center gap-1.5 text-xs py-1 px-3 bg-slate-50 dark:bg-zinc-800"
+                  >
+                    <Icon className="w-4 h-4 text-foreground shrink-0 stroke-[2px]" />
+                    <span className="font-bold text-foreground">{skill.name}</span>
+                  </Tag>
+                );
+              })}
+            </div>
+          </AnimateIn>
+        </div>
+
+        {/* Technology Stack Section */}
+        <div className="px-4 space-y-8 max-w-5xl mx-auto w-full">
+          <div className="border-l-4 border-foreground pl-4">
+            <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-foreground leading-none">
+              {tAbout("stack.title")}
+            </h3>
+            {tAbout("stack.desc") && (
+              <p className="text-xs md:text-sm text-foreground/75 font-semibold mt-2">
+                {tAbout("stack.desc")}
+              </p>
+            )}
+          </div>
+
+          <AnimateIn>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {techStack.map((stack) => (
                 <div 
@@ -982,12 +893,19 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </AnimateIn>
           </div>
-        </AnimateIn>
+        </div>
       </section>
 
       {/* 6. Contact Section */}
-      <section id="contact" className="min-h-[calc(100vh-8rem)] flex flex-col justify-center py-12 md:py-16 scroll-mt-20">
+      <section id="contact" className="flex flex-col justify-center py-4 md:py-6 scroll-mt-20">
+        <div className="px-4 mb-8 select-none flex items-center gap-2 text-xs font-black uppercase tracking-widest text-foreground">
+          <span className="px-2 py-0.5 bg-white dark:bg-zinc-900 border-2 border-foreground rounded-[4px] shadow-[2px_2px_0px_var(--neo-black)] text-[10px]">
+            06
+          </span>
+          <span>{tNavbar("contact")}</span>
+        </div>
         <AnimateIn>
           <div className="px-4">
             <div className="bg-black text-white dark:bg-zinc-950 dark:text-zinc-50 border-4 border-foreground rounded-[8px] p-8 md:p-12 text-center space-y-6 shadow-[8px_8px_0px_var(--neo-black)] transition-all">
